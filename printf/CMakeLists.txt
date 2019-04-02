@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.13)
+project(printf C)
+set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  -Wall -Werror -Wextra")
+file(GLOB LIBFT libft/*.c libft/libft.h)
+set(SOURCES main.c printf.h)
+add_executable(printf ${SOURCES} ${LIBFT})
