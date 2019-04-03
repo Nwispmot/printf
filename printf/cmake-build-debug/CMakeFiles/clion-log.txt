@@ -1,6 +1,11 @@
-/private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/C29F8786-663C-45D7-ADD5-0D244ADA9B98/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/nwispmot/Desktop/printf
+/private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/6F6BFE6B-9B26-4AD3-8872-A8E3695D166D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/nwispmot/Desktop/printf
+-- The C compiler identification is AppleClang 9.0.0.9000038
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
 -- Configuring done
-CMake Error: Cannot determine link language for target "main.c".
-CMake Error: CMake can not determine linker language for target: main.c
 -- Generating done
 -- Build files have been written to: /Users/nwispmot/Desktop/printf/cmake-build-debug

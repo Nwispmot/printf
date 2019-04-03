@@ -44,6 +44,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/nwispmot/Desktop/printf/."/>
+					<Add directory="/Users/nwispmot/Desktop/printf/libft"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -65,6 +67,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/nwispmot/Desktop/printf/."/>
+					<Add directory="/Users/nwispmot/Desktop/printf/libft"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -80,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/nwispmot/Desktop/printf/ft_printf.h">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/printf/libft/ft_atoi.c">
 			<Option target="printf"/>
 		</Unit>
@@ -285,9 +292,6 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/printf/main.c">
-			<Option target="printf"/>
-		</Unit>
-		<Unit filename="/Users/nwispmot/Desktop/printf/printf.h">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/printf/CMakeLists.txt">

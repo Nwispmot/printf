@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/printf.dir/main.c.o"
   "CMakeFiles/printf.dir/libft/ft_atoi.c.o"
   "CMakeFiles/printf.dir/libft/ft_atoi_base.c.o"
   "CMakeFiles/printf.dir/libft/ft_bzero.c.o"
@@ -66,6 +65,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/libft/ft_tolower.c.o"
   "CMakeFiles/printf.dir/libft/ft_toupper.c.o"
   "CMakeFiles/printf.dir/libft/get_next_line.c.o"
+  "CMakeFiles/printf.dir/main.c.o"
   "printf.pdb"
   "printf"
 )

@@ -198,7 +198,7 @@ CMakeFiles/printf.dir/libft/ft_toupper.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/libft/get_next_line.c.o: ../libft/get_next_line.c
 CMakeFiles/printf.dir/libft/get_next_line.c.o: ../libft/libft.h
 
+CMakeFiles/printf.dir/main.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/main.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/main.c.o: ../main.c
-CMakeFiles/printf.dir/main.c.o: ../printf.h
 

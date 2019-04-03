@@ -10,79 +10,87 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 
 void addflag(t_pf *pf, char *str, int i)
 {
 	if (str[i] == ' ')
-		pf->fl_space = 1;
+		pf->flags[space] = 1;
 	if (str[i] == '#')
-		pf->fl_sharp = 1;
+		pf->flags[sharp] = 1;
 	if (str[i] == '-')
-		pf->fl_minus = 1;
+		pf->flags[minus] = 1;
 	if (str[i] == '+')
-		pf->fl_plus = 1;
+		pf->flags[plus] = 1;
 	if (str[i] == '0')
-		pf->fl_zero = 1;
+		pf->flags[zero] = 1;
 }
 
-void addprecision(t_pf *pf, char *str, int i)
+void addprec(t_pf *pf, char *str, int i)
 {
-	i++;
-	pf->precision = ft_atoi(&str[i]);
+	pf->flags[prec] = ft_atoi(str);
 }
-
 int parse(char *str, t_pf *pf)
 {
 	int i;
 	i = 1;
 	while (str[i] == '#' || str[i] == '0' || str[i] == '-' || str[i] == '+'
-	|| str[i] == ' ' || str[i] == 'l' || str[i] == 'L' || str[i] == 'h' || str[i] == 'H')
+	|| str[i] == ' ' || str[i] == 'l' || str[i] == 'L' || str[i] == 'h' || str[i] == 'H' || str[i] == '.' || ft_isalnum(str[i]) == 1)
 	{
 		if (str[i] == '#' || str[i] == '0' || str[i] == '-' || str[i] == '+' || str[i] == ' ')
 			addflag(pf, str, i);
 		if (str[i] == '.')
-			pf->fl_zero = 1;
+			addprec(pf, &str[i + 1], i);
 		i++;
 	}
-	return (0);
+	return (i);
 }
 
 void init(t_pf *pf)
 {
-	pf = (t_pf*)malloc(sizeof(t_pf));
-	pf->fl_minus = 0;
-	pf->fl_plus = 0;
-	pf->fl_sharp = 0;
-	pf->fl_zero = 0;
-	pf->fl_space = 0;
+	int i;
+
+	i = 0;
+	pf->flags[last] = '\0';
+	while (i < last)
+	{
+		pf->flags[i] = 0;
+		printf("%d ", pf->flags[i]);
+		i++;
+	}
+	printf("\n");
 }
 int ft_printf(char *string, ...)
 {
 	int i;
+	int j = 0; //del
 
 	va_list ap;
 	t_pf *pf;
-	pf = NULL;
+	pf = (t_pf*)malloc(sizeof(t_pf));
 	init(pf);
-	i = 0;
+	i = -1;
 	va_start(ap, string);
-	while(string[i++])
+	while(string[++i])
 	{
 		if (string[i] == '%')
 		{
-			parse(string, pf);
+			i += parse(&string[i], pf);
 		}
 	}
-	printf("pre = %d", pf->precision);
+	while (j < last)
+	{
+		printf("%d ", pf->flags[j]);
+		j++;
+	}
 	va_end(ap);
 	return (0);
 }
 
 int main()
 {
-	printf("111");
-	ft_printf("%.20 456\n");
+	//printf("111");
+	ft_printf("abcd%#.15- \n");
 	return(0);
 }
