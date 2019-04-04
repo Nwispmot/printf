@@ -13,13 +13,19 @@ typedef enum e_flag
 	plus = 3,
 	space = 4,
 	prec = 5,
-	last = 6
+	width = 6,
+	l = 7,
+	ll = 8,
+	h = 9,
+	hh = 10,
+	L = 11
+
 }			t_flag;
 
 
 typedef struct		s_var
 {
-	int flags[last];
+	int flags[13];
 }					t_pf;
 
 #endif
