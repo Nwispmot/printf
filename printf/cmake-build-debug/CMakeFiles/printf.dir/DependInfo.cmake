@@ -71,6 +71,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/nwispmot/Desktop/printf/libft/ft_toupper.c" "/Users/nwispmot/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_toupper.c.o"
   "/Users/nwispmot/Desktop/printf/libft/get_next_line.c" "/Users/nwispmot/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/get_next_line.c.o"
   "/Users/nwispmot/Desktop/printf/main.c" "/Users/nwispmot/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/main.c.o"
+  "/Users/nwispmot/Desktop/printf/parse.c" "/Users/nwispmot/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/parse.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

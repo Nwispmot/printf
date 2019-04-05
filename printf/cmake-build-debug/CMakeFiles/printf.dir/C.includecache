@@ -11,6 +11,8 @@ libft/libft.h
 /Users/nwispmot/Desktop/printf/libft/libft.h
 stdarg.h
 -
+stdlib.h
+-
 stdio.h
 -
 

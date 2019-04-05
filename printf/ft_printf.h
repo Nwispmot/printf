@@ -2,6 +2,7 @@
 # define FT_PRINTF_H
 # include "libft/libft.h"
 # include <stdarg.h>
+# include <stdlib.h>
 # include <stdio.h> // del
 
 
@@ -26,6 +27,8 @@ typedef enum e_flag
 typedef struct		s_var
 {
 	int flags[13];
+	char convers;
 }					t_pf;
 
+int parse(char *str, t_pf *pf);
 #endif

@@ -202,3 +202,7 @@ CMakeFiles/printf.dir/main.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/main.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/main.c.o: ../main.c
 
+CMakeFiles/printf.dir/parse.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/parse.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/parse.c.o: ../parse.c
+

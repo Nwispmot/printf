@@ -4,7 +4,8 @@ LIB_DIR	 = ./libft
 NAME	 = printf
 LIBFT 	 = $(LIB_DIR)/libft.a
 
-SRC 	 = main.c
+SRC 	 = main.c \
+           parse.c
 
 OBJ 	 = $(addprefix $(OBJ_DIR)/,$(SRC:.c=.o))
 
