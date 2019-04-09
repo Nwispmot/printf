@@ -27,6 +27,7 @@ typedef enum e_flag
 typedef struct		s_var
 {
 	int flags[13];
+	int size;
 	char convers;
 }					t_pf;
 
