@@ -26,10 +26,13 @@ typedef enum e_flag
 
 typedef struct		s_var
 {
-	int flags[13];
-	int size;
-	char convers;
+	int		flags[13];
+	int		size;
+	char	convers;
 }					t_pf;
 
-int parse(char *str, t_pf *pf);
+int		parse(char *str, t_pf *pf);
+void	conv_c(t_pf *pf, va_list ap);
+void	conv_s(t_pf *pf, va_list ap);
+void	conv_di(t_pf *pf, va_list ap);
 #endif

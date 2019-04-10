@@ -76,4 +76,4 @@ add_executable(printf
         libft/get_next_line.h
         libft/libft.h
         ft_printf.h
-        main.c parse.c)
+        main.c parse.c int_dec.c char_str.c)

@@ -67,6 +67,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/libft/get_next_line.c.o"
   "CMakeFiles/printf.dir/main.c.o"
   "CMakeFiles/printf.dir/parse.c.o"
+  "CMakeFiles/printf.dir/int_dec.c.o"
+  "CMakeFiles/printf.dir/char_str.c.o"
   "printf.pdb"
   "printf"
 )

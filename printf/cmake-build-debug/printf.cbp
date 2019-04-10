@@ -84,7 +84,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/nwispmot/Desktop/printf/char_str.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/printf/ft_printf.h">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/nwispmot/Desktop/printf/int_dec.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/printf/libft/ft_atoi.c">

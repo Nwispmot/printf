@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/8EDA1B1D-D7E4-4A95-A89F-C8FB3EE81B9C/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/09936FEF-ED84-41EF-BB01-A22592FE7020/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/8EDA1B1D-D7E4-4A95-A89F-C8FB3EE81B9C/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/09936FEF-ED84-41EF-BB01-A22592FE7020/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -941,6 +941,32 @@ CMakeFiles/printf.dir/parse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/parse.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nwispmot/Desktop/printf/parse.c -o CMakeFiles/printf.dir/parse.c.s
 
+CMakeFiles/printf.dir/int_dec.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/int_dec.c.o: ../int_dec.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nwispmot/Desktop/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/printf.dir/int_dec.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/int_dec.c.o   -c /Users/nwispmot/Desktop/printf/int_dec.c
+
+CMakeFiles/printf.dir/int_dec.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/int_dec.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nwispmot/Desktop/printf/int_dec.c > CMakeFiles/printf.dir/int_dec.c.i
+
+CMakeFiles/printf.dir/int_dec.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/int_dec.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nwispmot/Desktop/printf/int_dec.c -o CMakeFiles/printf.dir/int_dec.c.s
+
+CMakeFiles/printf.dir/char_str.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/char_str.c.o: ../char_str.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nwispmot/Desktop/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/printf.dir/char_str.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/char_str.c.o   -c /Users/nwispmot/Desktop/printf/char_str.c
+
+CMakeFiles/printf.dir/char_str.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/char_str.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nwispmot/Desktop/printf/char_str.c > CMakeFiles/printf.dir/char_str.c.i
+
+CMakeFiles/printf.dir/char_str.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/char_str.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nwispmot/Desktop/printf/char_str.c -o CMakeFiles/printf.dir/char_str.c.s
+
 # Object files for target printf
 printf_OBJECTS = \
 "CMakeFiles/printf.dir/libft/ft_atoi.c.o" \
@@ -1010,7 +1036,9 @@ printf_OBJECTS = \
 "CMakeFiles/printf.dir/libft/ft_toupper.c.o" \
 "CMakeFiles/printf.dir/libft/get_next_line.c.o" \
 "CMakeFiles/printf.dir/main.c.o" \
-"CMakeFiles/printf.dir/parse.c.o"
+"CMakeFiles/printf.dir/parse.c.o" \
+"CMakeFiles/printf.dir/int_dec.c.o" \
+"CMakeFiles/printf.dir/char_str.c.o"
 
 # External object files for target printf
 printf_EXTERNAL_OBJECTS =
@@ -1083,9 +1111,11 @@ printf: CMakeFiles/printf.dir/libft/ft_toupper.c.o
 printf: CMakeFiles/printf.dir/libft/get_next_line.c.o
 printf: CMakeFiles/printf.dir/main.c.o
 printf: CMakeFiles/printf.dir/parse.c.o
+printf: CMakeFiles/printf.dir/int_dec.c.o
+printf: CMakeFiles/printf.dir/char_str.c.o
 printf: CMakeFiles/printf.dir/build.make
 printf: CMakeFiles/printf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nwispmot/Desktop/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Linking C executable printf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nwispmot/Desktop/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Linking C executable printf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/printf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

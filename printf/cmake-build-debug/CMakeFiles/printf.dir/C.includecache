@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/nwispmot/Desktop/printf/char_str.c
+ft_printf.h
+/Users/nwispmot/Desktop/printf/ft_printf.h
+
 /Users/nwispmot/Desktop/printf/ft_printf.h
 libft/libft.h
 /Users/nwispmot/Desktop/printf/libft/libft.h
@@ -15,6 +19,10 @@ stdlib.h
 -
 stdio.h
 -
+
+/Users/nwispmot/Desktop/printf/int_dec.c
+ft_printf.h
+/Users/nwispmot/Desktop/printf/ft_printf.h
 
 /Users/nwispmot/Desktop/printf/libft/libft.h
 sys/types.h
@@ -31,6 +39,10 @@ unistd.h
 -
 
 /Users/nwispmot/Desktop/printf/main.c
+ft_printf.h
+/Users/nwispmot/Desktop/printf/ft_printf.h
+
+/Users/nwispmot/Desktop/printf/parse.c
 ft_printf.h
 /Users/nwispmot/Desktop/printf/ft_printf.h
 

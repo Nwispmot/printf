@@ -115,6 +115,8 @@ int parse(char *str, t_pf *pf)
 	}
 	if(pf->flags[prec] != -1 || pf->flags[minus] == 1)
 		pf->flags[zero] = 0;
+	if(pf->flags[plus] == 1)
+		pf->flags[space] = 0;
 	pf->convers = str[i];
 	i++;
 	return (i);
