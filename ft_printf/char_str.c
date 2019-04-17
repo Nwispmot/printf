@@ -12,25 +12,39 @@
 
 #include "ft_printf.h"
 
+int		cwidth(t_pf *pf)
+{
+	int		i;
+	int		count;
+
+	i = 0;
+	count = 0;
+	while (i < pf->flags[width] - 1)
+	{
+		if (pf->flags[zero] == 1)
+			 count += write(1, "0", 1);
+		else
+			count += write(1, " ", 1);
+		i++;
+	}
+	return (count);
+}
+
 void	conv_c(t_pf *pf, va_list ap)
 {
-	char	c;
-	char	s[2];
-	char	*str;
+	char		c;
 
 	c = (char)va_arg(ap, int);
-	s[0] = (unsigned char)c;
-	s[1] = '\0';
-	if (pf->flags[width] != 0)
-			str = swidth(pf, s);
-	else
+	if (pf->flags[minus] == 1)
 	{
-		pf->size++;
-		ft_putstr(s);
-		return ;
+		pf->size += write(1, &c, 1);
+		pf->size += cwidth(pf);
 	}
-	pf->size += ft_strlen(str);
-	ft_putstr(str);
+	else if (pf->flags[minus] == 0)
+	{
+		pf->size += cwidth(pf);
+		pf->size += write(1, &c, 1);
+	}
 }
 
 void	conv_s(t_pf *pf, va_list ap)

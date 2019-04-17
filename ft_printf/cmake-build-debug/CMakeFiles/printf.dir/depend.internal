@@ -207,6 +207,9 @@ CMakeFiles/printf.dir/libft/ft_tolower.c.o
 CMakeFiles/printf.dir/libft/ft_toupper.c.o
  /Users/nwispmot/Desktop/ft_printf/libft/ft_toupper.c
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
+CMakeFiles/printf.dir/libft/ft_utoa.c.o
+ /Users/nwispmot/Desktop/ft_printf/libft/ft_utoa.c
+ /Users/nwispmot/Desktop/ft_printf/libft/libft.h
 CMakeFiles/printf.dir/libft/get_next_line.c.o
  /Users/nwispmot/Desktop/ft_printf/libft/get_next_line.c
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
@@ -218,6 +221,14 @@ CMakeFiles/printf.dir/parse.c.o
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
  /Users/nwispmot/Desktop/ft_printf/parse.c
+CMakeFiles/printf.dir/plus.c.o
+ /Users/nwispmot/Desktop/ft_printf/ft_printf.h
+ /Users/nwispmot/Desktop/ft_printf/libft/libft.h
+ /Users/nwispmot/Desktop/ft_printf/plus.c
+CMakeFiles/printf.dir/unsigned.c.o
+ /Users/nwispmot/Desktop/ft_printf/ft_printf.h
+ /Users/nwispmot/Desktop/ft_printf/libft/libft.h
+ /Users/nwispmot/Desktop/ft_printf/unsigned.c
 CMakeFiles/printf.dir/width.c.o
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h

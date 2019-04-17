@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-static int	ft_count(long long int n)
+static long long int	ft_count(long long int n)
 {
-	int size;
+	long long int size;
 	int t;
 
 	size = 0;
@@ -44,9 +44,9 @@ static char	ft_number(long long int n)
 char		*ft_itoa(long long int n)
 {
 	char	*fresh;
-	size_t	i;
-	size_t	size;
-	size_t	j;
+	long long 	i;
+	long long int	size;
+	long long int	j;
 
 	j = 0;
 //	if (n == -2147483648)

@@ -96,5 +96,6 @@ int					ft_count_if(char **tab, int (*f)(char*));
 int					get_next_line(const int fd, char **line);
 int					ft_atoi_base(const char *str, int base);
 void				ft_swap_d(double *a, double *b);
+char				*ft_utoa(unsigned long long int n);
 
 #endif

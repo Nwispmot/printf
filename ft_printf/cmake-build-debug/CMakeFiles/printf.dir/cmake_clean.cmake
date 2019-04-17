@@ -71,6 +71,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/char_str.c.o"
   "CMakeFiles/printf.dir/main.c.o"
   "CMakeFiles/printf.dir/width.c.o"
+  "CMakeFiles/printf.dir/unsigned.c.o"
+  "CMakeFiles/printf.dir/libft/ft_utoa.c.o"
+  "CMakeFiles/printf.dir/plus.c.o"
   "printf.pdb"
   "printf"
 )

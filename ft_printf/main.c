@@ -2,7 +2,9 @@
 
 int main()
 {
-	printf(" |%d\n", printf("%----4c |%1c", '\0', '\n'));
-	printf(" |%d\n", ft_printf("%----4c |%1c", '\0', '\n'));
+	//printf(" |%d\n", printf("c%-c ??", 0));
+	//printf(" |%d\n", ft_printf("c%-c ??", 0));
+	printf(" |%d\n", printf("%+010lld", 0));
+	printf(" |%d\n", ft_printf("%+010lld", 0));
 	return (0);
 }

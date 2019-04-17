@@ -72,9 +72,12 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/nwispmot/Desktop/ft_printf/libft/ft_swap_d.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_swap_d.c.o"
   "/Users/nwispmot/Desktop/ft_printf/libft/ft_tolower.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_tolower.c.o"
   "/Users/nwispmot/Desktop/ft_printf/libft/ft_toupper.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_toupper.c.o"
+  "/Users/nwispmot/Desktop/ft_printf/libft/ft_utoa.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_utoa.c.o"
   "/Users/nwispmot/Desktop/ft_printf/libft/get_next_line.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/get_next_line.c.o"
   "/Users/nwispmot/Desktop/ft_printf/main.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/main.c.o"
   "/Users/nwispmot/Desktop/ft_printf/parse.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/parse.c.o"
+  "/Users/nwispmot/Desktop/ft_printf/plus.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/plus.c.o"
+  "/Users/nwispmot/Desktop/ft_printf/unsigned.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/unsigned.c.o"
   "/Users/nwispmot/Desktop/ft_printf/width.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/width.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

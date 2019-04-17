@@ -207,6 +207,9 @@ CMakeFiles/printf.dir/libft/ft_tolower.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/libft/ft_toupper.c.o: ../libft/ft_toupper.c
 CMakeFiles/printf.dir/libft/ft_toupper.c.o: ../libft/libft.h
 
+CMakeFiles/printf.dir/libft/ft_utoa.c.o: ../libft/ft_utoa.c
+CMakeFiles/printf.dir/libft/ft_utoa.c.o: ../libft/libft.h
+
 CMakeFiles/printf.dir/libft/get_next_line.c.o: ../libft/get_next_line.c
 CMakeFiles/printf.dir/libft/get_next_line.c.o: ../libft/libft.h
 
@@ -217,6 +220,14 @@ CMakeFiles/printf.dir/main.c.o: ../main.c
 CMakeFiles/printf.dir/parse.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/parse.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/parse.c.o: ../parse.c
+
+CMakeFiles/printf.dir/plus.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/plus.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/plus.c.o: ../plus.c
+
+CMakeFiles/printf.dir/unsigned.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/unsigned.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/unsigned.c.o: ../unsigned.c
 
 CMakeFiles/printf.dir/width.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/width.c.o: ../libft/libft.h

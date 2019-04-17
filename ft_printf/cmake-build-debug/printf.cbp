@@ -291,6 +291,9 @@
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/libft/ft_toupper.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/nwispmot/Desktop/ft_printf/libft/ft_utoa.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/libft/get_next_line.c">
 			<Option target="printf"/>
 		</Unit>
@@ -304,6 +307,12 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/parse.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/nwispmot/Desktop/ft_printf/plus.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/nwispmot/Desktop/ft_printf/unsigned.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/width.c">

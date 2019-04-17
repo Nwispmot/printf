@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/4D2E7FD8-5C43-4628-9600-5100A74E92BD/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/A3C86F30-F492-45C7-B716-D371C3C67D22/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/4D2E7FD8-5C43-4628-9600-5100A74E92BD/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/A3C86F30-F492-45C7-B716-D371C3C67D22/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/nwispmot/Desktop/ft_printf/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/4D2E7FD8-5C43-4628-9600-5100A74E92BD/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/A3C86F30-F492-45C7-B716-D371C3C67D22/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/4D2E7FD8-5C43-4628-9600-5100A74E92BD/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/A3C86F30-F492-45C7-B716-D371C3C67D22/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -1959,6 +1959,33 @@ libft/ft_toupper.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_toupper.c.s
 .PHONY : libft/ft_toupper.c.s
 
+libft/ft_utoa.o: libft/ft_utoa.c.o
+
+.PHONY : libft/ft_utoa.o
+
+# target to build an object file
+libft/ft_utoa.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_utoa.c.o
+.PHONY : libft/ft_utoa.c.o
+
+libft/ft_utoa.i: libft/ft_utoa.c.i
+
+.PHONY : libft/ft_utoa.i
+
+# target to preprocess a source file
+libft/ft_utoa.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_utoa.c.i
+.PHONY : libft/ft_utoa.c.i
+
+libft/ft_utoa.s: libft/ft_utoa.c.s
+
+.PHONY : libft/ft_utoa.s
+
+# target to generate assembly for a file
+libft/ft_utoa.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_utoa.c.s
+.PHONY : libft/ft_utoa.c.s
+
 libft/get_next_line.o: libft/get_next_line.c.o
 
 .PHONY : libft/get_next_line.o
@@ -2039,6 +2066,60 @@ parse.s: parse.c.s
 parse.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse.c.s
 .PHONY : parse.c.s
+
+plus.o: plus.c.o
+
+.PHONY : plus.o
+
+# target to build an object file
+plus.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/plus.c.o
+.PHONY : plus.c.o
+
+plus.i: plus.c.i
+
+.PHONY : plus.i
+
+# target to preprocess a source file
+plus.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/plus.c.i
+.PHONY : plus.c.i
+
+plus.s: plus.c.s
+
+.PHONY : plus.s
+
+# target to generate assembly for a file
+plus.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/plus.c.s
+.PHONY : plus.c.s
+
+unsigned.o: unsigned.c.o
+
+.PHONY : unsigned.o
+
+# target to build an object file
+unsigned.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/unsigned.c.o
+.PHONY : unsigned.c.o
+
+unsigned.i: unsigned.c.i
+
+.PHONY : unsigned.i
+
+# target to preprocess a source file
+unsigned.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/unsigned.c.i
+.PHONY : unsigned.c.i
+
+unsigned.s: unsigned.c.s
+
+.PHONY : unsigned.s
+
+# target to generate assembly for a file
+unsigned.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/unsigned.c.s
+.PHONY : unsigned.c.s
 
 width.o: width.c.o
 
@@ -2280,6 +2361,9 @@ help:
 	@echo "... libft/ft_toupper.o"
 	@echo "... libft/ft_toupper.i"
 	@echo "... libft/ft_toupper.s"
+	@echo "... libft/ft_utoa.o"
+	@echo "... libft/ft_utoa.i"
+	@echo "... libft/ft_utoa.s"
 	@echo "... libft/get_next_line.o"
 	@echo "... libft/get_next_line.i"
 	@echo "... libft/get_next_line.s"
@@ -2289,6 +2373,12 @@ help:
 	@echo "... parse.o"
 	@echo "... parse.i"
 	@echo "... parse.s"
+	@echo "... plus.o"
+	@echo "... plus.i"
+	@echo "... plus.s"
+	@echo "... unsigned.o"
+	@echo "... unsigned.i"
+	@echo "... unsigned.s"
 	@echo "... width.o"
 	@echo "... width.i"
 	@echo "... width.s"
