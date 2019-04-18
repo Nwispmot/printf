@@ -2,6 +2,10 @@
 
 char *iplus(char *str)
 {
-	str[0] = '+';
-	return (str);
+	char *plus;
+	char *fresh;
+
+	plus = ft_strdup("+");
+	fresh = ft_strjoin(plus, str);
+	return (fresh);
 }

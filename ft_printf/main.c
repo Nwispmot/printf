@@ -2,9 +2,7 @@
 
 int main()
 {
-	//printf(" |%d\n", printf("c%-c ??", 0));
-	//printf(" |%d\n", ft_printf("c%-c ??", 0));
-	printf(" |%d\n", printf("%+010lld", 0));
-	printf(" |%d\n", ft_printf("%+010lld", 0));
+	printf(" |%d\n", printf("% 2d", 734745068));
+	printf(" |%d\n", ft_printf("% 2d", 734745068));
 	return (0);
 }

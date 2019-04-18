@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-char *iprec(t_pf *pf, char *str, intmax_t n)
+char *iprec(t_pf *pf, char *str)
 {
 	int len;
 	int i;
@@ -20,7 +20,7 @@ char *iprec(t_pf *pf, char *str, intmax_t n)
 
 	i = 0;
 	len = pf->flags[prec] - (int)ft_strlen(str);
-	if (n < 0)
+	if (ft_strchr(str, '-') != NULL || ft_strchr(str, '+') != NULL)
 		len++;
 	pre = (char*)malloc((sizeof(char)) * (len + 1));
 	while(i < len)
@@ -28,9 +28,14 @@ char *iprec(t_pf *pf, char *str, intmax_t n)
 		pre[i] = '0';
 		i++;
 	}
-	if (n < 0)
+	if (ft_strchr(str, '-') != NULL)
 	{
 		pre[0] = '-';
+		str[0] = '0';
+	}
+	if (ft_strchr(str, '+') != NULL)
+	{
+		pre[0] = '+';
 		str[0] = '0';
 	}
 	pre[i] = '\0';
@@ -44,7 +49,6 @@ void conv_di(t_pf *pf, va_list ap)
 	intmax_t n;
 	char *str;
 	char *pre;
-	char *fr;
 
 	if(pf->flags[l] == 1)
 		n = va_arg(ap, long int);
@@ -58,25 +62,19 @@ void conv_di(t_pf *pf, va_list ap)
 		n = (signed char) n;
 
 	str = ft_itoa(n);
-	if (pf->flags[prec] > (int)(ft_strlen(str)) || ( pf->flags[prec] > (int)(ft_strlen(str) - 1) && ft_strchr(str, '-') != NULL))
-		str = iprec(pf, str, n);
+	if (pf->flags[plus] == 1 && n > 0)
+		str = iplus(str);
+	if (pf->flags[prec] >= (int)(ft_strlen(str)) || ( pf->flags[prec] > (int)(ft_strlen(str) - 1) && ft_strchr(str, '-') != NULL))
+		str = iprec(pf, str);
 	else if (pf->flags[prec] == 0 && str[0] == '0' && str[1] == '\0')
 		str[0] = '\0';
-	if (pf->flags[space] == 1 && n >= 0)
-	{
-		pre = (char*)malloc((sizeof(char)) * (2));
-		pre[0] = ' ';
-		pre[1] = '\0';
-		fr = str;
-		str = ft_strjoin(pre, str);
-		ft_strdel(&fr);
-		ft_strdel(&pre);
-	}
-
+	pre = ft_strdup(" ");
+	if (pf->flags[plus] == 1 && n == 0)
+		str = iplus(str);
 	if (pf->flags[width] != 0 && (pf->flags[width] > (int) ft_strlen(str)))
 		str = iwidth(pf, str, n);
-	if (pf->flags[plus] == 1 && n >= 0)
-		str[0] = '+';
+	if (pf->flags[space] == 1 && n >= 0) // && pf->flags[width] == 0
+		str = ft_strjoin(pre, str);
 	pf->size += ft_strlen(str);
 	ft_putstr(str);
 }

@@ -1,11 +1,10 @@
 #include "ft_printf.h"
 
-char	*iwidth(t_pf *pf, char *str, int n)
+char	*iwidth(t_pf *pf, char *str, intmax_t n)
 {
 	int		i;
 	int		len;
 	char	*pre;
-	char	*fr;
 
 	i = 0;
 	len = pf->flags[width] - (int) ft_strlen(str);
@@ -18,26 +17,26 @@ char	*iwidth(t_pf *pf, char *str, int n)
 			pre[i] = ' ';
 		i++;
 	}
-	if (n < 0 && pf->flags[zero] == 1)
+	if (ft_strchr(str, '-') != NULL && pf->flags[zero] == 1)
 	{
 		pre[0] = '-';
 		str[0] = '0';
 	}
+	if (ft_strchr(str, '+') != NULL && n != 0 && pf->flags[zero] == 1)
+	{
+		pre[0] = '+';
+		str[0] = '0';
+	}
+	if (str[0] == '+' && str[1] == '0' && pf->flags[zero] == 1)
+	{
+		pre[0] = '+';
+		str[0] = '0';
+	}
 	pre[i] = '\0';
 	if (pf->flags[minus] == 0)
-	{
-		fr = str;
 		str = ft_strjoin(pre, str);
-		ft_strdel(&fr);
-		ft_strdel(&pre);
-	}
 	else if (pf->flags[minus] == 1)
-	{
-		fr = str;
 		str = ft_strjoin(str, pre);
-		ft_strdel(&fr);
-		ft_strdel(&pre);
-	}
 	return (str);
 }
 

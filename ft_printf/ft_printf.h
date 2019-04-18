@@ -37,7 +37,7 @@ void	conv_c(t_pf *pf, va_list ap);
 void	conv_s(t_pf *pf, va_list ap);
 void	conv_di(t_pf *pf, va_list ap);
 void	conv_u(t_pf *pf, va_list ap);
-char	*iwidth(t_pf *pf, char *str, int n);
+char	*iwidth(t_pf *pf, char *str, intmax_t n);
 char	*swidth(t_pf *pf, char *str);
 char	*iplus(char *str);
 
