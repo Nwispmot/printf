@@ -12,31 +12,6 @@
 
 #include "libft.h"
 
-//	int		i;
-//	int		j;
-//	int		len;
-//	char	*fresh;
-//
-//	i = 0;
-//	j = 0;
-//	if (!s1 || !s2)
-//		return (0);
-//	len = ft_strlen(s1) + ft_strlen(s2);
-//	if (!(fresh = (char*)malloc((len + 1) * sizeof(char))))
-//		return (NULL);
-//	while (s1[i])
-//	{
-//		fresh[i] = s1[i];
-//		i++;
-//	}
-//	while (s2[j])
-//	{
-//		fresh[i] = s2[j];
-//		i++;
-//		j++;
-//	}
-//	fresh[i] = '\0';
-//	return (fresh);
 char	*ft_strjoin(char const *s1, char const *s2) {
 	char *s3;
 

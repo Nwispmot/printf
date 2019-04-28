@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/26FD50AD-ABCD-4DE7-8DAA-E9DF700AC8D4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Users/nwispmot/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/26FD50AD-ABCD-4DE7-8DAA-E9DF700AC8D4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Users/nwispmot/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -1019,18 +1019,57 @@ CMakeFiles/printf.dir/libft/ft_utoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/libft/ft_utoa.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nwispmot/Desktop/ft_printf/libft/ft_utoa.c -o CMakeFiles/printf.dir/libft/ft_utoa.c.s
 
-CMakeFiles/printf.dir/plus.c.o: CMakeFiles/printf.dir/flags.make
-CMakeFiles/printf.dir/plus.c.o: ../plus.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/printf.dir/plus.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/plus.c.o   -c /Users/nwispmot/Desktop/ft_printf/plus.c
+CMakeFiles/printf.dir/sharp.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/sharp.c.o: ../sharp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/printf.dir/sharp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/sharp.c.o   -c /Users/nwispmot/Desktop/ft_printf/sharp.c
 
-CMakeFiles/printf.dir/plus.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/plus.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nwispmot/Desktop/ft_printf/plus.c > CMakeFiles/printf.dir/plus.c.i
+CMakeFiles/printf.dir/sharp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/sharp.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nwispmot/Desktop/ft_printf/sharp.c > CMakeFiles/printf.dir/sharp.c.i
 
-CMakeFiles/printf.dir/plus.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/plus.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nwispmot/Desktop/ft_printf/plus.c -o CMakeFiles/printf.dir/plus.c.s
+CMakeFiles/printf.dir/sharp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/sharp.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nwispmot/Desktop/ft_printf/sharp.c -o CMakeFiles/printf.dir/sharp.c.s
+
+CMakeFiles/printf.dir/octal.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/octal.c.o: ../octal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/printf.dir/octal.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/octal.c.o   -c /Users/nwispmot/Desktop/ft_printf/octal.c
+
+CMakeFiles/printf.dir/octal.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/octal.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nwispmot/Desktop/ft_printf/octal.c > CMakeFiles/printf.dir/octal.c.i
+
+CMakeFiles/printf.dir/octal.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/octal.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nwispmot/Desktop/ft_printf/octal.c -o CMakeFiles/printf.dir/octal.c.s
+
+CMakeFiles/printf.dir/libft/ft_itoa_base.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/libft/ft_itoa_base.c.o: ../libft/ft_itoa_base.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/printf.dir/libft/ft_itoa_base.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/libft/ft_itoa_base.c.o   -c /Users/nwispmot/Desktop/ft_printf/libft/ft_itoa_base.c
+
+CMakeFiles/printf.dir/libft/ft_itoa_base.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/libft/ft_itoa_base.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nwispmot/Desktop/ft_printf/libft/ft_itoa_base.c > CMakeFiles/printf.dir/libft/ft_itoa_base.c.i
+
+CMakeFiles/printf.dir/libft/ft_itoa_base.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/libft/ft_itoa_base.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nwispmot/Desktop/ft_printf/libft/ft_itoa_base.c -o CMakeFiles/printf.dir/libft/ft_itoa_base.c.s
+
+CMakeFiles/printf.dir/lhex.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/lhex.c.o: ../lhex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/printf.dir/lhex.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/lhex.c.o   -c /Users/nwispmot/Desktop/ft_printf/lhex.c
+
+CMakeFiles/printf.dir/lhex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/lhex.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nwispmot/Desktop/ft_printf/lhex.c > CMakeFiles/printf.dir/lhex.c.i
+
+CMakeFiles/printf.dir/lhex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/lhex.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nwispmot/Desktop/ft_printf/lhex.c -o CMakeFiles/printf.dir/lhex.c.s
 
 # Object files for target printf
 printf_OBJECTS = \
@@ -1108,7 +1147,10 @@ printf_OBJECTS = \
 "CMakeFiles/printf.dir/width.c.o" \
 "CMakeFiles/printf.dir/unsigned.c.o" \
 "CMakeFiles/printf.dir/libft/ft_utoa.c.o" \
-"CMakeFiles/printf.dir/plus.c.o"
+"CMakeFiles/printf.dir/sharp.c.o" \
+"CMakeFiles/printf.dir/octal.c.o" \
+"CMakeFiles/printf.dir/libft/ft_itoa_base.c.o" \
+"CMakeFiles/printf.dir/lhex.c.o"
 
 # External object files for target printf
 printf_EXTERNAL_OBJECTS =
@@ -1187,10 +1229,13 @@ printf: CMakeFiles/printf.dir/main.c.o
 printf: CMakeFiles/printf.dir/width.c.o
 printf: CMakeFiles/printf.dir/unsigned.c.o
 printf: CMakeFiles/printf.dir/libft/ft_utoa.c.o
-printf: CMakeFiles/printf.dir/plus.c.o
+printf: CMakeFiles/printf.dir/sharp.c.o
+printf: CMakeFiles/printf.dir/octal.c.o
+printf: CMakeFiles/printf.dir/libft/ft_itoa_base.c.o
+printf: CMakeFiles/printf.dir/lhex.c.o
 printf: CMakeFiles/printf.dir/build.make
 printf: CMakeFiles/printf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Linking C executable printf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Linking C executable printf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/printf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -34,8 +34,12 @@ void conversion(t_pf *pf, va_list ap)
 		conv_s(pf, ap);
 	if(pf->convers == 'c')
 		conv_c(pf, ap);
-//	if(pf->convers == 'u')
-//		conv_u(pf, ap);
+	if(pf->convers == 'u')
+		conv_u(pf, ap);
+	if(pf->convers == 'o')
+		conv_o(pf, ap);
+    if(pf->convers == 'x')
+        conv_lx(pf, ap);
 }
 
 int ft_printf(char *string, ...)

@@ -2,7 +2,7 @@
 
 int main()
 {
-	printf(" |%d\n", printf("% 2d", 734745068));
-	printf(" |%d\n", ft_printf("% 2d", 734745068));
+	printf(" |%d\n", printf("% 2.47hx", 500481260));
+	printf(" |%d\n", ft_printf("% 2.47hx", 500481260));
 	return (0);
 }

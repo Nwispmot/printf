@@ -13,6 +13,10 @@ CMakeFiles/printf.dir/int_dec.c.o
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/int_dec.c
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
+CMakeFiles/printf.dir/lhex.c.o
+ /Users/nwispmot/Desktop/ft_printf/ft_printf.h
+ /Users/nwispmot/Desktop/ft_printf/lhex.c
+ /Users/nwispmot/Desktop/ft_printf/libft/libft.h
 CMakeFiles/printf.dir/libft/ft_atoi.c.o
  /Users/nwispmot/Desktop/ft_printf/libft/ft_atoi.c
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
@@ -45,6 +49,9 @@ CMakeFiles/printf.dir/libft/ft_isprint.c.o
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
 CMakeFiles/printf.dir/libft/ft_itoa.c.o
  /Users/nwispmot/Desktop/ft_printf/libft/ft_itoa.c
+ /Users/nwispmot/Desktop/ft_printf/libft/libft.h
+CMakeFiles/printf.dir/libft/ft_itoa_base.c.o
+ /Users/nwispmot/Desktop/ft_printf/libft/ft_itoa_base.c
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
 CMakeFiles/printf.dir/libft/ft_lstadd.c.o
  /Users/nwispmot/Desktop/ft_printf/libft/ft_lstadd.c
@@ -217,14 +224,18 @@ CMakeFiles/printf.dir/main.c.o
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
  /Users/nwispmot/Desktop/ft_printf/main.c
+CMakeFiles/printf.dir/octal.c.o
+ /Users/nwispmot/Desktop/ft_printf/ft_printf.h
+ /Users/nwispmot/Desktop/ft_printf/libft/libft.h
+ /Users/nwispmot/Desktop/ft_printf/octal.c
 CMakeFiles/printf.dir/parse.c.o
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
  /Users/nwispmot/Desktop/ft_printf/parse.c
-CMakeFiles/printf.dir/plus.c.o
+CMakeFiles/printf.dir/sharp.c.o
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
- /Users/nwispmot/Desktop/ft_printf/plus.c
+ /Users/nwispmot/Desktop/ft_printf/sharp.c
 CMakeFiles/printf.dir/unsigned.c.o
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h

@@ -96,6 +96,9 @@
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/int_dec.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/nwispmot/Desktop/ft_printf/lhex.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/libft/ft_atoi.c">
 			<Option target="printf"/>
 		</Unit>
@@ -127,6 +130,9 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/libft/ft_itoa.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/nwispmot/Desktop/ft_printf/libft/ft_itoa_base.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/libft/ft_lstadd.c">
@@ -306,10 +312,13 @@
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/main.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/nwispmot/Desktop/ft_printf/octal.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/parse.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/nwispmot/Desktop/ft_printf/plus.c">
+		<Unit filename="/Users/nwispmot/Desktop/ft_printf/sharp.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/unsigned.c">

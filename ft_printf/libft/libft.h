@@ -97,5 +97,6 @@ int					get_next_line(const int fd, char **line);
 int					ft_atoi_base(const char *str, int base);
 void				ft_swap_d(double *a, double *b);
 char				*ft_utoa(unsigned long long int n);
+char				*ft_itoa_base(unsigned long long n, int base, int uppercase);
 
 #endif

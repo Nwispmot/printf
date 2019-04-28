@@ -12,6 +12,16 @@
 
 #include "ft_printf.h"
 
+char *iplus(char *str)
+{
+	char *plus;
+	char *fresh;
+
+	plus = ft_strdup("+");
+	fresh = ft_strjoin(plus, str);
+	return (fresh);
+}
+
 char *iprec(t_pf *pf, char *str)
 {
 	int len;
@@ -71,10 +81,10 @@ void conv_di(t_pf *pf, va_list ap)
 	pre = ft_strdup(" ");
 	if (pf->flags[plus] == 1 && n == 0)
 		str = iplus(str);
-	if (pf->flags[width] != 0 && (pf->flags[width] > (int) ft_strlen(str)))
-		str = iwidth(pf, str, n);
-	if (pf->flags[space] == 1 && n >= 0) // && pf->flags[width] == 0
+	if (pf->flags[space] == 1 && n >= 0)
 		str = ft_strjoin(pre, str);
+	if (pf->flags[width] != 0 && (pf->flags[width] > (int)ft_strlen(str)))
+		str = iwidth(pf, str, n);
 	pf->size += ft_strlen(str);
 	ft_putstr(str);
 }

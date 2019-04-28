@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/26FD50AD-ABCD-4DE7-8DAA-E9DF700AC8D4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Users/nwispmot/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/26FD50AD-ABCD-4DE7-8DAA-E9DF700AC8D4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Users/nwispmot/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/nwispmot/Desktop/ft_printf/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/26FD50AD-ABCD-4DE7-8DAA-E9DF700AC8D4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Users/nwispmot/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n0000wgr00073y/T/AppTranslocation/26FD50AD-ABCD-4DE7-8DAA-E9DF700AC8D4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Users/nwispmot/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -203,6 +203,33 @@ int_dec.s: int_dec.c.s
 int_dec.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/int_dec.c.s
 .PHONY : int_dec.c.s
+
+lhex.o: lhex.c.o
+
+.PHONY : lhex.o
+
+# target to build an object file
+lhex.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/lhex.c.o
+.PHONY : lhex.c.o
+
+lhex.i: lhex.c.i
+
+.PHONY : lhex.i
+
+# target to preprocess a source file
+lhex.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/lhex.c.i
+.PHONY : lhex.c.i
+
+lhex.s: lhex.c.s
+
+.PHONY : lhex.s
+
+# target to generate assembly for a file
+lhex.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/lhex.c.s
+.PHONY : lhex.c.s
 
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
@@ -500,6 +527,33 @@ libft/ft_itoa.s: libft/ft_itoa.c.s
 libft/ft_itoa.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_itoa.c.s
 .PHONY : libft/ft_itoa.c.s
+
+libft/ft_itoa_base.o: libft/ft_itoa_base.c.o
+
+.PHONY : libft/ft_itoa_base.o
+
+# target to build an object file
+libft/ft_itoa_base.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_itoa_base.c.o
+.PHONY : libft/ft_itoa_base.c.o
+
+libft/ft_itoa_base.i: libft/ft_itoa_base.c.i
+
+.PHONY : libft/ft_itoa_base.i
+
+# target to preprocess a source file
+libft/ft_itoa_base.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_itoa_base.c.i
+.PHONY : libft/ft_itoa_base.c.i
+
+libft/ft_itoa_base.s: libft/ft_itoa_base.c.s
+
+.PHONY : libft/ft_itoa_base.s
+
+# target to generate assembly for a file
+libft/ft_itoa_base.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_itoa_base.c.s
+.PHONY : libft/ft_itoa_base.c.s
 
 libft/ft_lstadd.o: libft/ft_lstadd.c.o
 
@@ -2040,6 +2094,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/main.c.s
 .PHONY : main.c.s
 
+octal.o: octal.c.o
+
+.PHONY : octal.o
+
+# target to build an object file
+octal.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/octal.c.o
+.PHONY : octal.c.o
+
+octal.i: octal.c.i
+
+.PHONY : octal.i
+
+# target to preprocess a source file
+octal.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/octal.c.i
+.PHONY : octal.c.i
+
+octal.s: octal.c.s
+
+.PHONY : octal.s
+
+# target to generate assembly for a file
+octal.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/octal.c.s
+.PHONY : octal.c.s
+
 parse.o: parse.c.o
 
 .PHONY : parse.o
@@ -2067,32 +2148,32 @@ parse.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse.c.s
 .PHONY : parse.c.s
 
-plus.o: plus.c.o
+sharp.o: sharp.c.o
 
-.PHONY : plus.o
+.PHONY : sharp.o
 
 # target to build an object file
-plus.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/plus.c.o
-.PHONY : plus.c.o
+sharp.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/sharp.c.o
+.PHONY : sharp.c.o
 
-plus.i: plus.c.i
+sharp.i: sharp.c.i
 
-.PHONY : plus.i
+.PHONY : sharp.i
 
 # target to preprocess a source file
-plus.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/plus.c.i
-.PHONY : plus.c.i
+sharp.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/sharp.c.i
+.PHONY : sharp.c.i
 
-plus.s: plus.c.s
+sharp.s: sharp.c.s
 
-.PHONY : plus.s
+.PHONY : sharp.s
 
 # target to generate assembly for a file
-plus.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/plus.c.s
-.PHONY : plus.c.s
+sharp.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/sharp.c.s
+.PHONY : sharp.c.s
 
 unsigned.o: unsigned.c.o
 
@@ -2166,6 +2247,9 @@ help:
 	@echo "... int_dec.o"
 	@echo "... int_dec.i"
 	@echo "... int_dec.s"
+	@echo "... lhex.o"
+	@echo "... lhex.i"
+	@echo "... lhex.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -2199,6 +2283,9 @@ help:
 	@echo "... libft/ft_itoa.o"
 	@echo "... libft/ft_itoa.i"
 	@echo "... libft/ft_itoa.s"
+	@echo "... libft/ft_itoa_base.o"
+	@echo "... libft/ft_itoa_base.i"
+	@echo "... libft/ft_itoa_base.s"
 	@echo "... libft/ft_lstadd.o"
 	@echo "... libft/ft_lstadd.i"
 	@echo "... libft/ft_lstadd.s"
@@ -2370,12 +2457,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... octal.o"
+	@echo "... octal.i"
+	@echo "... octal.s"
 	@echo "... parse.o"
 	@echo "... parse.i"
 	@echo "... parse.s"
-	@echo "... plus.o"
-	@echo "... plus.i"
-	@echo "... plus.s"
+	@echo "... sharp.o"
+	@echo "... sharp.i"
+	@echo "... sharp.s"
 	@echo "... unsigned.o"
 	@echo "... unsigned.i"
 	@echo "... unsigned.s"

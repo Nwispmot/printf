@@ -13,6 +13,10 @@ CMakeFiles/printf.dir/int_dec.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/int_dec.c.o: ../int_dec.c
 CMakeFiles/printf.dir/int_dec.c.o: ../libft/libft.h
 
+CMakeFiles/printf.dir/lhex.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/lhex.c.o: ../lhex.c
+CMakeFiles/printf.dir/lhex.c.o: ../libft/libft.h
+
 CMakeFiles/printf.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
 CMakeFiles/printf.dir/libft/ft_atoi.c.o: ../libft/libft.h
 
@@ -45,6 +49,9 @@ CMakeFiles/printf.dir/libft/ft_isprint.c.o: ../libft/libft.h
 
 CMakeFiles/printf.dir/libft/ft_itoa.c.o: ../libft/ft_itoa.c
 CMakeFiles/printf.dir/libft/ft_itoa.c.o: ../libft/libft.h
+
+CMakeFiles/printf.dir/libft/ft_itoa_base.c.o: ../libft/ft_itoa_base.c
+CMakeFiles/printf.dir/libft/ft_itoa_base.c.o: ../libft/libft.h
 
 CMakeFiles/printf.dir/libft/ft_lstadd.c.o: ../libft/ft_lstadd.c
 CMakeFiles/printf.dir/libft/ft_lstadd.c.o: ../libft/libft.h
@@ -217,13 +224,17 @@ CMakeFiles/printf.dir/main.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/main.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/main.c.o: ../main.c
 
+CMakeFiles/printf.dir/octal.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/octal.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/octal.c.o: ../octal.c
+
 CMakeFiles/printf.dir/parse.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/parse.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/parse.c.o: ../parse.c
 
-CMakeFiles/printf.dir/plus.c.o: ../ft_printf.h
-CMakeFiles/printf.dir/plus.c.o: ../libft/libft.h
-CMakeFiles/printf.dir/plus.c.o: ../plus.c
+CMakeFiles/printf.dir/sharp.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/sharp.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/sharp.c.o: ../sharp.c
 
 CMakeFiles/printf.dir/unsigned.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/unsigned.c.o: ../libft/libft.h

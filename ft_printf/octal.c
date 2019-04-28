@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   unsigned.c                                         :+:      :+:    :+:   */
+/*   octal.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nwispmot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/15 18:57:43 by nwispmot          #+#    #+#             */
-/*   Updated: 2019/04/15 18:57:45 by nwispmot         ###   ########.fr       */
+/*   Created: 2019/04/20 19:39:11 by nwispmot          #+#    #+#             */
+/*   Updated: 2019/04/20 19:39:14 by nwispmot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include "ft_printf.h"
 
-void ucheck(t_pf *pf,char **str, char **pre, intmax_t n)
+void ocheck(t_pf *pf,char **str, char **pre, intmax_t n)
 {
 	if (ft_strchr(*str, '-') != NULL && pf->flags[zero] == 1)
 	{
@@ -31,7 +32,7 @@ void ucheck(t_pf *pf,char **str, char **pre, intmax_t n)
 	}
 }
 
-char	*uwidth(t_pf *pf, char *str, intmax_t n)
+char	*owidth(t_pf *pf, char *str, intmax_t n)
 {
 	int		i;
 	int		len;
@@ -47,7 +48,7 @@ char	*uwidth(t_pf *pf, char *str, intmax_t n)
 		else
 			pre[i] = ' ';
 	}
-	ucheck(pf, &str, &pre, n);
+	ocheck(pf, &str, &pre, n);
 	if (str[0] == '+' && str[1] == '0' && pf->flags[zero] == 1)
 	{
 		pre[0] = '+';
@@ -60,7 +61,7 @@ char	*uwidth(t_pf *pf, char *str, intmax_t n)
 		return (str = ft_strjoin(str, pre));
 }
 
-char *uplus(char *str)
+char *oplus(char *str)
 {
 	char *plus;
 	char *fresh;
@@ -70,7 +71,7 @@ char *uplus(char *str)
 	return (fresh);
 }
 
-char *uprec(t_pf *pf, char *str)
+char *oprec(t_pf *pf, char *str)
 {
 	int len;
 	int i;
@@ -102,7 +103,7 @@ char *uprec(t_pf *pf, char *str)
 	return (str);
 }
 
-void conv_u(t_pf *pf, va_list ap)
+void conv_o(t_pf *pf, va_list ap)
 {
 	uintmax_t n;
 	char *str;
@@ -119,20 +120,22 @@ void conv_u(t_pf *pf, va_list ap)
 	if(pf->flags[hh] == 1)
 		n = (unsigned char) n;
 
-	str = ft_utoa(n);
+	str = ft_itoa_base(n, 8, 0);
+    if (pf->flags[sharp] == 1)
+        str = ft_sharp(str);
 	if (pf->flags[plus] == 1 && n > 0)
-		str = uplus(str);
+		str = oplus(str);
 	if (pf->flags[prec] >= (int)(ft_strlen(str)) || ( pf->flags[prec] > (int)(ft_strlen(str) - 1) && ft_strchr(str, '-') != NULL))
-		str = uprec(pf, str);
+		str = oprec(pf, str);
 	else if (pf->flags[prec] == 0 && str[0] == '0' && str[1] == '\0')
 		str[0] = '\0';
 	pre = ft_strdup(" ");
 	if (pf->flags[plus] == 1 && n == 0)
-		str = uplus(str);
+		str = oplus(str);
 	if (pf->flags[space] == 1)
 		str = ft_strjoin(pre, str);
 	if (pf->flags[width] != 0 && (pf->flags[width] > (int)ft_strlen(str)))
-		str = uwidth(pf, str, n);
+		str = owidth(pf, str, n);
 	pf->size += ft_strlen(str);
 	ft_putstr(str);
 }
