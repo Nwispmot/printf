@@ -321,6 +321,9 @@
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/sharp.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/nwispmot/Desktop/ft_printf/uhex.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/unsigned.c">
 			<Option target="printf"/>
 		</Unit>

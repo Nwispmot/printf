@@ -40,6 +40,8 @@ void conversion(t_pf *pf, va_list ap)
 		conv_o(pf, ap);
     if(pf->convers == 'x')
         conv_lx(pf, ap);
+    if(pf->convers == 'X')
+        conv_ux(pf, ap);
 }
 
 int ft_printf(char *string, ...)

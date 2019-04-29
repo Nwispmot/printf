@@ -2175,6 +2175,33 @@ sharp.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/sharp.c.s
 .PHONY : sharp.c.s
 
+uhex.o: uhex.c.o
+
+.PHONY : uhex.o
+
+# target to build an object file
+uhex.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/uhex.c.o
+.PHONY : uhex.c.o
+
+uhex.i: uhex.c.i
+
+.PHONY : uhex.i
+
+# target to preprocess a source file
+uhex.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/uhex.c.i
+.PHONY : uhex.c.i
+
+uhex.s: uhex.c.s
+
+.PHONY : uhex.s
+
+# target to generate assembly for a file
+uhex.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/uhex.c.s
+.PHONY : uhex.c.s
+
 unsigned.o: unsigned.c.o
 
 .PHONY : unsigned.o
@@ -2466,6 +2493,9 @@ help:
 	@echo "... sharp.o"
 	@echo "... sharp.i"
 	@echo "... sharp.s"
+	@echo "... uhex.o"
+	@echo "... uhex.i"
+	@echo "... uhex.s"
 	@echo "... unsigned.o"
 	@echo "... unsigned.i"
 	@echo "... unsigned.s"

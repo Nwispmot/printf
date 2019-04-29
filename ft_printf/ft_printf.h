@@ -40,9 +40,9 @@ void	conv_u(t_pf *pf, va_list ap);
 void	conv_o(t_pf *pf, va_list ap);
 void    conv_lx(t_pf *pf, va_list ap);
 char	*iwidth(t_pf *pf, char *str, intmax_t n);
+void    conv_ux(t_pf *pf, va_list ap);
 char	*swidth(t_pf *pf, char *str);
 char	*iplus(char *str);
 char    *ft_sharp(char *str);
-char    *hex_sharp(char *str);
 
 #endif
