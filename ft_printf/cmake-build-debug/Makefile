@@ -2148,6 +2148,33 @@ parse.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse.c.s
 .PHONY : parse.c.s
 
+pointer.o: pointer.c.o
+
+.PHONY : pointer.o
+
+# target to build an object file
+pointer.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pointer.c.o
+.PHONY : pointer.c.o
+
+pointer.i: pointer.c.i
+
+.PHONY : pointer.i
+
+# target to preprocess a source file
+pointer.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pointer.c.i
+.PHONY : pointer.c.i
+
+pointer.s: pointer.c.s
+
+.PHONY : pointer.s
+
+# target to generate assembly for a file
+pointer.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pointer.c.s
+.PHONY : pointer.c.s
+
 sharp.o: sharp.c.o
 
 .PHONY : sharp.o
@@ -2490,6 +2517,9 @@ help:
 	@echo "... parse.o"
 	@echo "... parse.i"
 	@echo "... parse.s"
+	@echo "... pointer.o"
+	@echo "... pointer.i"
+	@echo "... pointer.s"
 	@echo "... sharp.o"
 	@echo "... sharp.i"
 	@echo "... sharp.s"

@@ -17,7 +17,6 @@ char	*uxwidth(t_pf *pf, char *str, int n)
         else
             pre[i] = ' ';
     }
-
     pre[i] = '\0';
     if (pf->flags[minus] == 0)
     {

@@ -16,9 +16,9 @@ stdlib.h
 stdio.h
 -
 
-/Users/nwispmot/Desktop/ft_printf/lhex.c
-ft_printf.h
-/Users/nwispmot/Desktop/ft_printf/ft_printf.h
+/Users/nwispmot/Desktop/ft_printf/libft/ft_itoa_base.c
+libft.h
+/Users/nwispmot/Desktop/ft_printf/libft/libft.h
 
 /Users/nwispmot/Desktop/ft_printf/libft/libft.h
 sys/types.h
@@ -33,4 +33,8 @@ stdlib.h
 -
 unistd.h
 -
+
+/Users/nwispmot/Desktop/ft_printf/main.c
+ft_printf.h
+/Users/nwispmot/Desktop/ft_printf/ft_printf.h
 

@@ -2,7 +2,7 @@
 
 int main()
 {
-	printf(" |%d\n", printf("%#010x", 85445236));
-	printf(" |%d\n", ft_printf("%#010x", 85445236));
+	printf(" |%d\n", printf("%", 42));
+	printf(" |%d\n", ft_printf("%O", 42));
 	return (0);
 }

@@ -232,10 +232,18 @@ CMakeFiles/printf.dir/parse.c.o
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
  /Users/nwispmot/Desktop/ft_printf/parse.c
+CMakeFiles/printf.dir/pointer.c.o
+ /Users/nwispmot/Desktop/ft_printf/ft_printf.h
+ /Users/nwispmot/Desktop/ft_printf/libft/libft.h
+ /Users/nwispmot/Desktop/ft_printf/pointer.c
 CMakeFiles/printf.dir/sharp.c.o
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
  /Users/nwispmot/Desktop/ft_printf/sharp.c
+CMakeFiles/printf.dir/uhex.c.o
+ /Users/nwispmot/Desktop/ft_printf/ft_printf.h
+ /Users/nwispmot/Desktop/ft_printf/libft/libft.h
+ /Users/nwispmot/Desktop/ft_printf/uhex.c
 CMakeFiles/printf.dir/unsigned.c.o
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h

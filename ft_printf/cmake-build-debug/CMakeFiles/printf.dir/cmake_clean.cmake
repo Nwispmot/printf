@@ -78,6 +78,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/libft/ft_itoa_base.c.o"
   "CMakeFiles/printf.dir/lhex.c.o"
   "CMakeFiles/printf.dir/uhex.c.o"
+  "CMakeFiles/printf.dir/pointer.c.o"
   "printf.pdb"
   "printf"
 )

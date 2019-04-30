@@ -15,7 +15,8 @@ SRC 	 = ft_printf.c \
            sharp.c \
            octal.c \
            lhex.c \
-           uhex.c
+           uhex.c \
+           pointer.c
 
 OBJ 	 = $(addprefix $(OBJ_DIR)/,$(SRC:.c=.o))
 

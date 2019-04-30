@@ -232,9 +232,17 @@ CMakeFiles/printf.dir/parse.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/parse.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/parse.c.o: ../parse.c
 
+CMakeFiles/printf.dir/pointer.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/pointer.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/pointer.c.o: ../pointer.c
+
 CMakeFiles/printf.dir/sharp.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/sharp.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/sharp.c.o: ../sharp.c
+
+CMakeFiles/printf.dir/uhex.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/uhex.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/uhex.c.o: ../uhex.c
 
 CMakeFiles/printf.dir/unsigned.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/unsigned.c.o: ../libft/libft.h

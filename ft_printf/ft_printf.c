@@ -42,6 +42,10 @@ void conversion(t_pf *pf, va_list ap)
         conv_lx(pf, ap);
     if(pf->convers == 'X')
         conv_ux(pf, ap);
+    if(pf->convers == '%')
+        pf->size += write(1, "%", 1);
+    if(pf->convers == 'p')
+        conv_p(pf, ap);
 }
 
 int ft_printf(char *string, ...)

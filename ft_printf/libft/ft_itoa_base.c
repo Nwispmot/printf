@@ -12,49 +12,6 @@
 
 #include "libft.h"
 
-//static int	ft_count(unsigned long long n, int base)
-//{
-//	int size;
-//    unsigned long long b;
-//
-//    b = (unsigned long long)base;
-//	size = 0;
-//	while (n > b)
-//	{
-//		n = n / b;
-//		size++;
-//	}
-//	size++;
-//	return (size);
-//}
-//
-//
-//char		*ft_itoa_base(unsigned long long n, int base, int uppercase)
-//{
-//	char	*fresh;
-//	char    *str;
-//	int		size;
-//	int		res;
-//
-//	size = ft_count(n, base);
-//	if (!(fresh = (char*)malloc((size + 1) * sizeof(char))))
-//		return (NULL);
-//	fresh[size] = '\0';
-//	if (!uppercase)
-//        str = "0123456789abcdef";
-//    else
-//        str = "0123456789ABCDEF";
-//	while (size >= 0)
-//	{
-//        res = n % base;
-//        fresh[size] = str[res];
-//        n = n / base;
-//        size--;
-//	}
-//	return (fresh);
-//}
-
-
 static size_t	digit_count(long nb, int base)
 {
     size_t		i;
@@ -79,7 +36,7 @@ char			*ft_itoa_base(unsigned long long value, int base, int uppercase)
         return (0);
     if (value == 0)
         return ("0");
-    if (!uppercase)
+    if (uppercase == 0)
         tab_base = "0123456789abcdef";
     else
         tab_base = "0123456789ABCDEF";
