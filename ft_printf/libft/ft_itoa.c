@@ -49,8 +49,6 @@ char		*ft_itoa(long long int n)
 	long long int	j;
 
 	j = 0;
-//	if (n == -2147483648)
-//		return (ft_strdup("-2147483648"));
 	size = ft_count(n);
 	i = size - 1;
 	if (!(fresh = (char*)malloc((size + 1) * sizeof(char))))

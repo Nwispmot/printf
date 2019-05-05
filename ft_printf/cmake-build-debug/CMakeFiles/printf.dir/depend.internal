@@ -5,6 +5,10 @@ CMakeFiles/printf.dir/char_str.c.o
  /Users/nwispmot/Desktop/ft_printf/char_str.c
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
+CMakeFiles/printf.dir/float.c.o
+ /Users/nwispmot/Desktop/ft_printf/float.c
+ /Users/nwispmot/Desktop/ft_printf/ft_printf.h
+ /Users/nwispmot/Desktop/ft_printf/libft/libft.h
 CMakeFiles/printf.dir/ft_printf.c.o
  /Users/nwispmot/Desktop/ft_printf/ft_printf.c
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h

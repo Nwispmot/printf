@@ -79,6 +79,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/lhex.c.o"
   "CMakeFiles/printf.dir/uhex.c.o"
   "CMakeFiles/printf.dir/pointer.c.o"
+  "CMakeFiles/printf.dir/float.c.o"
   "printf.pdb"
   "printf"
 )

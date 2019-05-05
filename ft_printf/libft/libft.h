@@ -98,5 +98,6 @@ int					ft_atoi_base(const char *str, int base);
 void				ft_swap_d(double *a, double *b);
 char				*ft_utoa(unsigned long long int n);
 char				*ft_itoa_base(unsigned long long n, int base, int uppercase);
+char				*ft_ftoa(long double value);
 
 #endif

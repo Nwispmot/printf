@@ -5,6 +5,10 @@ CMakeFiles/printf.dir/char_str.c.o: ../char_str.c
 CMakeFiles/printf.dir/char_str.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/char_str.c.o: ../libft/libft.h
 
+CMakeFiles/printf.dir/float.c.o: ../float.c
+CMakeFiles/printf.dir/float.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/float.c.o: ../libft/libft.h
+
 CMakeFiles/printf.dir/ft_printf.c.o: ../ft_printf.c
 CMakeFiles/printf.dir/ft_printf.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/ft_printf.c.o: ../libft/libft.h

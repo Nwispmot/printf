@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/nwispmot/Desktop/ft_printf/char_str.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/char_str.c.o"
+  "/Users/nwispmot/Desktop/ft_printf/float.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/float.c.o"
   "/Users/nwispmot/Desktop/ft_printf/ft_printf.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/ft_printf.c.o"
   "/Users/nwispmot/Desktop/ft_printf/int_dec.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/int_dec.c.o"
   "/Users/nwispmot/Desktop/ft_printf/lhex.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/lhex.c.o"

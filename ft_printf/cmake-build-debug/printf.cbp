@@ -87,6 +87,9 @@
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/char_str.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/nwispmot/Desktop/ft_printf/float.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/ft_printf.c">
 			<Option target="printf"/>
 		</Unit>

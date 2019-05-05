@@ -150,6 +150,33 @@ char_str.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/char_str.c.s
 .PHONY : char_str.c.s
 
+float.o: float.c.o
+
+.PHONY : float.o
+
+# target to build an object file
+float.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/float.c.o
+.PHONY : float.c.o
+
+float.i: float.c.i
+
+.PHONY : float.i
+
+# target to preprocess a source file
+float.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/float.c.i
+.PHONY : float.c.i
+
+float.s: float.c.s
+
+.PHONY : float.s
+
+# target to generate assembly for a file
+float.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/float.c.s
+.PHONY : float.c.s
+
 ft_printf.o: ft_printf.c.o
 
 .PHONY : ft_printf.o
@@ -2295,6 +2322,9 @@ help:
 	@echo "... char_str.o"
 	@echo "... char_str.i"
 	@echo "... char_str.s"
+	@echo "... float.o"
+	@echo "... float.i"
+	@echo "... float.s"
 	@echo "... ft_printf.o"
 	@echo "... ft_printf.i"
 	@echo "... ft_printf.s"

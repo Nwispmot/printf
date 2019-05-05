@@ -46,6 +46,8 @@ void conversion(t_pf *pf, va_list ap)
         pf->size += write(1, "%", 1);
     if(pf->convers == 'p')
         conv_p(pf, ap);
+    if(pf->convers == 'f')
+        conv_f(pf, ap);
 }
 
 int ft_printf(char *string, ...)
