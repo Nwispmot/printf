@@ -236,6 +236,10 @@ CMakeFiles/printf.dir/parse.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/parse.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/parse.c.o: ../parse.c
 
+CMakeFiles/printf.dir/percent.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/percent.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/percent.c.o: ../percent.c
+
 CMakeFiles/printf.dir/pointer.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/pointer.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/pointer.c.o: ../pointer.c

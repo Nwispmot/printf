@@ -2175,6 +2175,33 @@ parse.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse.c.s
 .PHONY : parse.c.s
 
+percent.o: percent.c.o
+
+.PHONY : percent.o
+
+# target to build an object file
+percent.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/percent.c.o
+.PHONY : percent.c.o
+
+percent.i: percent.c.i
+
+.PHONY : percent.i
+
+# target to preprocess a source file
+percent.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/percent.c.i
+.PHONY : percent.c.i
+
+percent.s: percent.c.s
+
+.PHONY : percent.s
+
+# target to generate assembly for a file
+percent.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/percent.c.s
+.PHONY : percent.c.s
+
 pointer.o: pointer.c.o
 
 .PHONY : pointer.o
@@ -2547,6 +2574,9 @@ help:
 	@echo "... parse.o"
 	@echo "... parse.i"
 	@echo "... parse.s"
+	@echo "... percent.o"
+	@echo "... percent.i"
+	@echo "... percent.s"
 	@echo "... pointer.o"
 	@echo "... pointer.i"
 	@echo "... pointer.s"

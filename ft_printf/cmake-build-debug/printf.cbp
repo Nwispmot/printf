@@ -321,6 +321,9 @@
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/parse.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/nwispmot/Desktop/ft_printf/percent.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/pointer.c">
 			<Option target="printf"/>
 		</Unit>

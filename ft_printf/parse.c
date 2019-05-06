@@ -113,7 +113,9 @@ int parse(char *str, t_pf *pf)
 		if (str[i] == 'l' || str[i] == 'L' || str[i] == 'h')
 			i = addmod(pf, str, i);
 	}
-	if(pf->flags[prec] != -1 || pf->flags[minus] == 1)
+	if (pf->flags[prec] != -1 && str[i] != 'f')
+		pf->flags[zero] = 0;
+	if (pf->flags[minus] == 1)
 		pf->flags[zero] = 0;
 	if(pf->flags[plus] == 1)
 		pf->flags[space] = 0;

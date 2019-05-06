@@ -236,6 +236,10 @@ CMakeFiles/printf.dir/parse.c.o
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
  /Users/nwispmot/Desktop/ft_printf/parse.c
+CMakeFiles/printf.dir/percent.c.o
+ /Users/nwispmot/Desktop/ft_printf/ft_printf.h
+ /Users/nwispmot/Desktop/ft_printf/libft/libft.h
+ /Users/nwispmot/Desktop/ft_printf/percent.c
 CMakeFiles/printf.dir/pointer.c.o
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h

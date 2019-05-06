@@ -17,7 +17,8 @@ SRC 	 = ft_printf.c \
            lhex.c \
            uhex.c \
            pointer.c \
-           float.c
+           float.c \
+           percent.c
 
 OBJ 	 = $(addprefix $(OBJ_DIR)/,$(SRC:.c=.o))
 

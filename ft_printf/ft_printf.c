@@ -43,7 +43,7 @@ void conversion(t_pf *pf, va_list ap)
     if(pf->convers == 'X')
         conv_ux(pf, ap);
     if(pf->convers == '%')
-        pf->size += write(1, "%", 1);
+        conv_percent(pf, ap);
     if(pf->convers == 'p')
         conv_p(pf, ap);
     if(pf->convers == 'f')
@@ -53,9 +53,9 @@ void conversion(t_pf *pf, va_list ap)
 int ft_printf(char *string, ...)
 {
 	int i;
-
 	va_list ap;
 	t_pf *pf;
+
 	pf = (t_pf*)malloc(sizeof(t_pf));
 	pf->size = 0;
 	i = -1;

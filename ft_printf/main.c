@@ -2,7 +2,8 @@
 
 int main()
 {
-	printf(" |%d\n", printf("%f", 42.1923));
-	printf(" |%d\n", ft_printf("%f", 42.1923));
+    long double d;
+	printf(" |%d\n", printf("%10#%", -9223372036854775808.000000));
+	printf(" |%d\n", ft_printf("%10#%", -9223372036854775808.000000));
 	return (0);
 }

@@ -58,9 +58,7 @@ void	conv_s(t_pf *pf, va_list ap)
 	if (pf->flags[width] != 0)
 	{
 		if (pf->flags[width] > (int) ft_strlen(s))
-		{
 			s = swidth(pf, s);
-		}
 	}
 	pf->size += ft_strlen(s);
 	ft_putstr(s);

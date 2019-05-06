@@ -76,4 +76,4 @@ add_executable(printf
         libft/get_next_line.h
         libft/libft.h
         ft_printf.h
-        ft_printf.c parse.c int_dec.c char_str.c main.c width.c unsigned.c libft/ft_utoa.c sharp.c octal.c libft/ft_itoa_base.c lhex.c uhex.c pointer.c float.c)
+        ft_printf.c parse.c int_dec.c char_str.c main.c width.c unsigned.c libft/ft_utoa.c sharp.c octal.c libft/ft_itoa_base.c lhex.c uhex.c pointer.c float.c percent.c)
