@@ -3,21 +3,25 @@
 char    *ftoa(t_pf *pf, long double value)
 {
     int len;
-    int *d;
-    int t;
+    long double bval;
+    long long t;
+    int re;
     int i = 0;
     char *ret;
+    char *integer;
 
+	bval = value;
+	re = 0;
+	integer = ft_itoa(value);
     if (value < 0)
-        value *= -1;
+		value *= -1;
     if (pf->flags[prec] != -1)
         len = pf->flags[prec] + 1;
     else
         len = 7;
-    t = (int)value;
+    t = (long long)value;
     value -= t;
     ret = (char *)malloc(sizeof(char) * (len + 1));
-    d = (int *)malloc(sizeof(int) * (len - 1));
     ret[0] = '.';
     ret[len] = '\0';
     while (++i < len)
@@ -25,16 +29,25 @@ char    *ftoa(t_pf *pf, long double value)
         value *= 10;
         t = (int)value;
         ret[i] = (char)(value + '0');
-        d[i] = (int)value;
         value -= t;
     }
     value *= 10;
     if (value >= 5)
     {
+    	if (ret[i - 1] == '9')
+    	{
+    		re = 1;
+			bval = bval >= 0 ?  bval + (1 / ft_pow(10,i)) : bval - (1 / ft_pow(10,i));
+		}
+    	if (pf->flags[prec] == 0)
+    		return(ft_itoa(bval + 1));
         t++;
         ret[i - 1] = (char) (t + '0');
     }
-    return (ret);
+	ret = ft_strjoin(integer, ret);
+    if (re == 1)
+    	ret = ftoa(pf, bval);
+    return(len > 1 ? ret : integer);
 }
 
 
@@ -42,22 +55,27 @@ void conv_f(t_pf *pf, va_list ap)
 {
     long double n;
     char *str;
-    char *integer;
     char *pre;
 
     if (pf->flags[L] == 1)
         n = va_arg(ap,  long double);
-    else
-        n = va_arg(ap,  double);
-
-    integer = ft_itoa(n);
+    else {
+		n = va_arg(ap, double);
+	}
     if (pf->flags[prec] == 0)
-        str = integer;
-    else
     {
+		str = ftoa(pf, n);
+		if(pf->flags[sharp] == 1)
+			str	= ft_strjoin(str , ".");
+	}
+    else
         str = ftoa(pf, n);
-        str = ft_strjoin(integer, str);
-    }
+	if (n != n)
+		str = ft_strdup("nan");
+	if (n == +1 / 0.0)
+		str = ft_strdup("inf");
+	if (n == -1 / 0.0)
+		str = ft_strdup("-inf");
 
     if (pf->flags[plus] == 1 && n > 0)
         str = iplus(str);
@@ -68,7 +86,6 @@ void conv_f(t_pf *pf, va_list ap)
         str = ft_strjoin(pre, str);
     if (pf->flags[width] != 0 && (pf->flags[width] > (int)ft_strlen(str)))
         str = fwidth(pf, str, n);
-
     pf->size += ft_strlen(str);
     ft_putstr(str);
 }

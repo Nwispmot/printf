@@ -99,6 +99,9 @@ CMakeFiles/printf.dir/libft/ft_memmove.c.o
 CMakeFiles/printf.dir/libft/ft_memset.c.o
  /Users/nwispmot/Desktop/ft_printf/libft/ft_memset.c
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
+CMakeFiles/printf.dir/libft/ft_pow.c.o
+ /Users/nwispmot/Desktop/ft_printf/libft/ft_pow.c
+ /Users/nwispmot/Desktop/ft_printf/libft/libft.h
 CMakeFiles/printf.dir/libft/ft_putchar.c.o
  /Users/nwispmot/Desktop/ft_printf/libft/ft_putchar.c
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h

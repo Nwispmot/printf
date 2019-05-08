@@ -86,7 +86,7 @@ char	*fwidth(t_pf *pf, char *str, intmax_t n)
 	pre = (char *) malloc((sizeof(char)) * ((pf->flags[width] - (int) ft_strlen(str)) + 1));
 	while (++i < len)
 	{
-		if (pf->flags[zero] == 1)
+		if (pf->flags[zero] == 1 && str[0] != 'n')
 			pre[i] = '0';
 		else
 			pre[i] = ' ';

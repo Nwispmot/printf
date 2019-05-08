@@ -81,6 +81,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/pointer.c.o"
   "CMakeFiles/printf.dir/float.c.o"
   "CMakeFiles/printf.dir/percent.c.o"
+  "CMakeFiles/printf.dir/libft/ft_pow.c.o"
   "printf.pdb"
   "printf"
 )

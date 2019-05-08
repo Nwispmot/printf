@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static size_t	digit_count(long nb, int base)
+static size_t	digit_count(unsigned long long nb, int base)
 {
     size_t		i;
 

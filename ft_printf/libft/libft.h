@@ -85,7 +85,7 @@ void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr(int n);
 void				ft_putnbr_fd(int n, int fd);
-char				*ft_itoa(long long int n);
+char				*ft_itoa(intmax_t n);
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 char				**ft_strsplit(char const *s, char c);
 int					ft_sqrt(int nb);
@@ -99,5 +99,6 @@ void				ft_swap_d(double *a, double *b);
 char				*ft_utoa(unsigned long long int n);
 char				*ft_itoa_base(unsigned long long n, int base, int uppercase);
 char				*ft_ftoa(long double value);
+double				ft_pow(double x, double y);
 
 #endif

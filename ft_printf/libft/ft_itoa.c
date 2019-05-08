@@ -12,16 +12,16 @@
 
 #include "libft.h"
 
-static long long int	ft_count(long long int n)
+static int	ft_count(intmax_t n)
 {
-	long long int size;
+	int size;
 	int t;
 
 	size = 0;
 	t = 0;
 	if (n < 0)
 	{
-		n = -n;
+		n *= -1;
 		t++;
 	}
 	while (n > 9)
@@ -33,7 +33,7 @@ static long long int	ft_count(long long int n)
 	return (size + t);
 }
 
-static char	ft_number(long long int n)
+static char	ft_number(intmax_t n)
 {
 	int t;
 
@@ -41,12 +41,12 @@ static char	ft_number(long long int n)
 	return (t + '0');
 }
 
-char		*ft_itoa(long long int n)
+char		*ft_itoa(intmax_t n)
 {
 	char	*fresh;
 	long long 	i;
-	long long int	size;
-	long long int	j;
+	int	size;
+	long long 	j;
 
 	j = 0;
 	size = ft_count(n);
@@ -56,7 +56,7 @@ char		*ft_itoa(long long int n)
 	fresh[0] = '-';
 	if (n < 0)
 	{
-		n = -n;
+		n *= -1;
 		j++;
 	}
 	while (j++ < size)

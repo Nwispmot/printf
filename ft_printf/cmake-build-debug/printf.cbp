@@ -180,6 +180,9 @@
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/libft/ft_memset.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/nwispmot/Desktop/ft_printf/libft/ft_pow.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/libft/ft_putchar.c">
 			<Option target="printf"/>
 		</Unit>

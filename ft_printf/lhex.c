@@ -90,7 +90,7 @@ void conv_lx(t_pf *pf, va_list ap)
     if (pf->flags[prec] >= (int) (ft_strlen(str)) || (pf->flags[prec] > (int) (ft_strlen(str) - 1) && ft_strchr(str, '-') != NULL))
         str = lxprec(pf, str, n);
     else if (pf->flags[prec] == 0 && str[0] == '0' && str[1] == '\0')
-        str[0] = '\0';
+		str = ft_strdup("\0");
     if (ft_strchr(str, 'x') == NULL)
     {
         if (pf->flags[sharp] == 1 && n != 0 && pf->flags[width] == 0 && pf->flags[prec] != -1)

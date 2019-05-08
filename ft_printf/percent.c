@@ -4,6 +4,7 @@ void conv_percent(t_pf *pf, va_list ap)
 {
     int i;
 
+	ap = NULL;
     i = -1;
     if (pf->flags[width] != 0)
     {

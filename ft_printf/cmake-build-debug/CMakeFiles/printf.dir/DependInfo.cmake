@@ -35,6 +35,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/nwispmot/Desktop/ft_printf/libft/ft_memdel.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_memdel.c.o"
   "/Users/nwispmot/Desktop/ft_printf/libft/ft_memmove.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_memmove.c.o"
   "/Users/nwispmot/Desktop/ft_printf/libft/ft_memset.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_memset.c.o"
+  "/Users/nwispmot/Desktop/ft_printf/libft/ft_pow.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_pow.c.o"
   "/Users/nwispmot/Desktop/ft_printf/libft/ft_putchar.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_putchar.c.o"
   "/Users/nwispmot/Desktop/ft_printf/libft/ft_putchar_fd.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_putchar_fd.c.o"
   "/Users/nwispmot/Desktop/ft_printf/libft/ft_putendl.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_putendl.c.o"
