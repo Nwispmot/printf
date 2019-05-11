@@ -59,9 +59,10 @@ void float_checker()
 //	printf("\n");
 //	ret2 = ft_printf("%024f", 345.123490650);
 //	printf("\nor: %d\nmy: %d\n\n", ret1, ret2);
-	printf("%56.27f",-9223372036854775807.000000);
+	printf("%56.6f",922.0009555);
 	printf("\n");
-	ft_printf("%56.27f", -9223372036854775806.000000);
+	//-9223372036854775808
+	ft_printf("%56.6f", 922.0009555);
 //	printf("\nor: %d\nmy: %d\n\n", ret1, ret2);
 //	ft_printf("my: %f|\n", 1.00);
 //	printf("og: %f|\n", 1.00);
@@ -174,7 +175,8 @@ void float_checker()
 int main()
 {
 
-float_checker();
-//	test %-7C %007d%-10.2ls!!, 0xd777, 0x45, L"„Äª
+	//float_checker();
+	printf(" |%d\n", printf("42% #20.14f42", 7.0000000));
+	printf(" |%d\n", ft_printf("42% #20.14f42", 7.000000));
 	return (0);
 }
