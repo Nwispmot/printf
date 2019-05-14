@@ -12,6 +12,29 @@
 
 #include "ft_printf.h"
 
+//char *max(t_pf *pf, long double value)
+//{
+//	char *ret;
+//	char *integer;
+//	int len;
+//	int i;
+//
+//	i = 0;
+//	if (pf->flags[prec] != -1)
+//		len = pf->flags[prec] + 1;
+//	else
+//		len = 7;
+//	if (value <= -9223372036854775807)
+//		integer = (ft_strdup("-9223372036854775808"));
+//	else if (value >= 9223372036854775807)
+//		integer = (ft_strdup("9223372036854775808"));
+//	ret = (char *)malloc(sizeof(char) * (len + 1));
+//	while (++i < len)
+//		ret[i] = '0';
+//	ret[0] = '.';
+//	return(ft_strjoin(integer, ret));
+//}
+
 void init(t_pf *pf)
 {
 	int i;
@@ -30,24 +53,28 @@ void conversion(t_pf *pf, va_list ap)
 {
 	if(pf->convers == 'd' || pf->convers == 'i')
 		conv_di(pf, ap);
-	if(pf->convers == 's')
+	else if(pf->convers == 's')
 		conv_s(pf, ap);
-	if(pf->convers == 'c')
+	else if(pf->convers == 'c')
 		conv_c(pf, ap);
-	if(pf->convers == 'u')
+	else if(pf->convers == 'u')
 		conv_u(pf, ap);
-	if(pf->convers == 'o')
+	else if(pf->convers == 'o')
 		conv_o(pf, ap);
-    if(pf->convers == 'x')
+	else if(pf->convers == 'x')
         conv_lx(pf, ap);
-    if(pf->convers == 'X')
+	else if(pf->convers == 'X')
         conv_ux(pf, ap);
-    if(pf->convers == '%')
+	else if(pf->convers == '%')
         conv_percent(pf, ap);
-    if(pf->convers == 'p')
+	else if(pf->convers == 'p')
         conv_p(pf, ap);
-    if(pf->convers == 'f')
+	else if(pf->convers == 'f')
         conv_f(pf, ap);
+//	else if(pf->convers == '\0')
+//		return;
+//	else
+//		pf->size += write(1, &pf->convers, 1);
 }
 
 int ft_printf(char *string, ...)
@@ -73,6 +100,8 @@ int ft_printf(char *string, ...)
 		}
 		else
 			pf->size++;
+//		if(pf->convers == '\0')
+//			return(0);
 		if(string[i] != '%')
 			write(1, &string[i], 1);
 		else

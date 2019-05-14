@@ -48,5 +48,6 @@ void    conv_p(t_pf *pf, va_list ap);
 void    conv_f(t_pf *pf, va_list ap);
 char	*fwidth(t_pf *pf, char *str, intmax_t n);
 void    conv_percent(t_pf *pf, va_list ap);
+char	*max(t_pf *pf, long double value);
 
 #endif

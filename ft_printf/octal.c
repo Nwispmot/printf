@@ -107,7 +107,6 @@ void conv_o(t_pf *pf, va_list ap)
 {
 	uintmax_t n;
 	char *str;
-	char *pre;
 
 	if(pf->flags[l] == 1)
 		n = va_arg(ap, unsigned long int);
@@ -127,13 +126,9 @@ void conv_o(t_pf *pf, va_list ap)
 		str = oplus(str);
 	if (pf->flags[prec] >= (int)(ft_strlen(str)) || ( pf->flags[prec] > (int)(ft_strlen(str) - 1) && ft_strchr(str, '-') != NULL))
 		str = oprec(pf, str);
-	else if (pf->flags[prec] == 0 && str[0] == '0' && str[1] == '\0')
-		str[0] = '\0';
-	pre = ft_strdup(" ");
+//z
 	if (pf->flags[plus] == 1 && n == 0)
 		str = oplus(str);
-	if (pf->flags[space] == 1)
-		str = ft_strjoin(pre, str);
 	if (pf->flags[width] != 0 && (pf->flags[width] > (int)ft_strlen(str)))
 		str = owidth(pf, str, n);
 	pf->size += ft_strlen(str);

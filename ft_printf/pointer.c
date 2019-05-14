@@ -64,6 +64,8 @@ char *pprec(t_pf *pf, char *str, void *n)
         pre[1] = 'x';
     else if (pf->flags[prec] != -1 && n != 0)
         pre = ft_strjoin("0x",pre);
+//	    else if (pf->flags[prec] == 0 && n == 0)
+//	        pre = ft_strjoin("0x",pre);
     str = ft_strjoin(pre, str);
     ft_strdel(&pre);
     return (str);
@@ -80,7 +82,7 @@ void conv_p(t_pf *pf, va_list ap)
     if (pf->flags[prec] >= (int) (ft_strlen(str)) || (pf->flags[prec] > (int) (ft_strlen(str) - 1) && ft_strchr(str, '-') != NULL))
         str = pprec(pf, str, n);
     else if (pf->flags[prec] == 0 && str[0] == '0' && str[1] == '\0')
-        str[0] = '\0';
+        str = ft_strdup("\0");
     if (ft_strchr(str, 'x') == NULL)
     {
         if (pf->flags[width] == 0 && pf->flags[prec] != -1)

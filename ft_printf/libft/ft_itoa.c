@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+
 static int	ft_count(intmax_t n)
 {
 	int size;
@@ -48,22 +49,28 @@ char		*ft_itoa(intmax_t n)
 	int	size;
 	long long 	j;
 
+
 	j = 0;
-	size = ft_count(n);
-	i = size - 1;
-	if (!(fresh = (char*)malloc((size + 1) * sizeof(char))))
-		return (NULL);
-	fresh[0] = '-';
-	if (n < 0)
+	if (n <= -9223372036854775807)
+		fresh = (ft_strdup("-9223372036854775808"));
+	else if (n >= 9223372036854775807)
+		fresh = (ft_strdup("9223372036854775807"));
+	else
 	{
-		n *= -1;
-		j++;
+		size = ft_count(n);
+		i = size - 1;
+		if (!(fresh = (char *) malloc((size + 1) * sizeof(char))))
+			return (NULL);
+		fresh[0] = '-';
+		if (n < 0) {
+			n *= -1;
+			j++;
+		}
+		while (j++ < size) {
+			fresh[i--] = ft_number(n);
+			n = n / 10;
+		}
+		fresh[size] = '\0';
 	}
-	while (j++ < size)
-	{
-		fresh[i--] = ft_number(n);
-		n = n / 10;
-	}
-	fresh[size] = '\0';
 	return (fresh);
 }

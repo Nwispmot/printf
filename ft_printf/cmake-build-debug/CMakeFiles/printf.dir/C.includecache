@@ -35,4 +35,6 @@ ft_printf.h
 /Users/nwispmot/Desktop/ft_printf/ft_printf.h
 math.h
 -
+limits.h
+-
 

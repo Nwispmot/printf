@@ -15,7 +15,7 @@ char *max(t_pf *pf, long double value)
 	if (value <= -9223372036854775807)
 		integer = (ft_strdup("-9223372036854775808"));
 	else if (value >= 9223372036854775807)
-		integer = (ft_strdup("9223372036854775808"));
+		integer = (ft_strdup("9223372036854775807"));
 	ret = (char *)malloc(sizeof(char) * (len + 1));
 	while (++i < len)
 		ret[i] = '0';
@@ -71,26 +71,21 @@ char    *ftoa(t_pf *pf, long double value, int re)
     while (++i < len)
     {
     	value *= 10;
-//    	if (ret[i] == ':')
-//		{
-//			ret[i] = '0';
-//			ret[i] = (char)((t + 1) + '0');
-//		}
         t = (int)value;
         ret[i] = (char)(value + '0');
         value -= t;
     }
     value *= 10;
-    if (value >= 5)
+    if (value >= 5 && re == 0)
     {
     	if (ret[i - 1] == '9')
     	{
     		re++;
-			bval = bval >= 0 ?  bval + (1 / ft_pow(10, i - 1)) : bval - (1 / ft_pow(10, i - 1));
+			bval = bval >= 0 ?  bval + (1 / ft_pow(10, len - 2)) : bval - (1 / ft_pow(10, len - 2));
 		}
     	if (pf->flags[prec] == 0)
 		{
-    		bval++;
+    		bval > 0 ? bval++ : bval--;
     		return(ft_itoa(bval));
 		}
         t++;
