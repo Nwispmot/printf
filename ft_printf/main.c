@@ -275,11 +275,11 @@ int main()
 //	printf("%jd\n", 1234567);
 //	ft_printf("%jd\n", 1234567);
 
-//	printf(" |%d\n", printf("%ld", LONG_MAX));
-//	printf(" |%d\n", ft_printf("%ld", LONG_MAX));
+	printf(" |%d\n", printf("%ld", LONG_MAX));
+	printf(" |%d\n", ft_printf("%ld", LONG_MAX));
 
-	printf(" |%d\n", printf("%#2.49f", -9223372036854775808.000000));
-	printf(" |%d\n", ft_printf("%#2.49f", -9223372036854775808.000000));
+	printf(" |%d\n", printf("%kad", 5));
+	printf(" |%d\n", ft_printf("%kad", 5));
 
 //	printf(" |%d\n", printf("%#.o, %#.0o", 0, 0));
 //	printf(" |%d\n", ft_printf("%#.o, %#.0o", 0, 0));

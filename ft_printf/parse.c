@@ -49,48 +49,28 @@ int addwidth(t_pf *pf, char *str, int i)
 
 int addmod(t_pf *pf, char *str, int i)
 {
+	pf->flags[ll] = 0;
+	pf->flags[l] = 0;
+	pf->flags[h] = 0;
+	pf->flags[hh] = 0;
+	pf->flags[L] = 0;
+
 	if (str[i] == 'l' && str[i + 1] == 'l')
 	{
 		pf->flags[ll] = 1;
-		pf->flags[l] = 0;
-		pf->flags[h] = 0;
-		pf->flags[hh] = 0;
-		pf->flags[L] = 0;
 		i++;
 	}
 	else if (str[i] == 'l' && str[i + 1] != 'l')
-	{
 		pf->flags[l] = 1;
-		pf->flags[ll] = 0;
-		pf->flags[h] = 0;
-		pf->flags[hh] = 0;
-		pf->flags[L] = 0;
-	}
 	else if (str[i] == 'h' && str[i + 1] == 'h')
 	{
 		pf->flags[hh] = 1;
-		pf->flags[l] = 0;
-		pf->flags[h] = 0;
-		pf->flags[ll] = 0;
-		pf->flags[L] = 0;
 		i++;
 	}
 	else if (str[i] == 'h' && str[i + 1] != 'h')
-	{
 		pf->flags[h] = 1;
-		pf->flags[l] = 0;
-		pf->flags[ll] = 0;
-		pf->flags[hh] = 0;
-		pf->flags[L] = 0;
-	}
 	else if (str[i] == 'L')
-	{
 		pf->flags[L] = 1;
-		pf->flags[l] = 0;
-		pf->flags[h] = 0;
-		pf->flags[hh] = 0;
-		pf->flags[L] = 0;
-	}
 	i++;
 	return (i);
 }

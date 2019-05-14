@@ -34,40 +34,40 @@ static int	ft_count(intmax_t n)
 	return (size + t);
 }
 
-static char	ft_number(intmax_t n)
+static char *ma(intmax_t n)
 {
-	int t;
+	char *fresh;
 
-	t = n % 10;
-	return (t + '0');
+	fresh = NULL;
+	if (n <= -9223372036854775807)
+		fresh = (ft_strdup("-9223372036854775808"));
+	else if (n >= 9223372036854775807)
+		fresh = (ft_strdup("9223372036854775807"));
+	return(fresh);
 }
 
 char		*ft_itoa(intmax_t n)
 {
 	char	*fresh;
-	long long 	i;
-	int	size;
-	long long 	j;
+	int 	i;
+	int		size;
 
-
-	j = 0;
-	if (n <= -9223372036854775807)
-		fresh = (ft_strdup("-9223372036854775808"));
-	else if (n >= 9223372036854775807)
-		fresh = (ft_strdup("9223372036854775807"));
+	if (n <= -9223372036854775807 || n >= 9223372036854775807)
+		return(ma(n));
 	else
 	{
 		size = ft_count(n);
 		i = size - 1;
-		if (!(fresh = (char *) malloc((size + 1) * sizeof(char))))
-			return (NULL);
+		fresh = ft_strnew(size);
 		fresh[0] = '-';
-		if (n < 0) {
+		if (n < 0)
+		{
 			n *= -1;
-			j++;
+			size--;
 		}
-		while (j++ < size) {
-			fresh[i--] = ft_number(n);
+		while (size--)
+		{
+			fresh[i--] = (char)((n % 10) + '0');
 			n = n / 10;
 		}
 		fresh[size] = '\0';

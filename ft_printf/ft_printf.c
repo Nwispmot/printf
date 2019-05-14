@@ -12,29 +12,6 @@
 
 #include "ft_printf.h"
 
-//char *max(t_pf *pf, long double value)
-//{
-//	char *ret;
-//	char *integer;
-//	int len;
-//	int i;
-//
-//	i = 0;
-//	if (pf->flags[prec] != -1)
-//		len = pf->flags[prec] + 1;
-//	else
-//		len = 7;
-//	if (value <= -9223372036854775807)
-//		integer = (ft_strdup("-9223372036854775808"));
-//	else if (value >= 9223372036854775807)
-//		integer = (ft_strdup("9223372036854775808"));
-//	ret = (char *)malloc(sizeof(char) * (len + 1));
-//	while (++i < len)
-//		ret[i] = '0';
-//	ret[0] = '.';
-//	return(ft_strjoin(integer, ret));
-//}
-
 void init(t_pf *pf)
 {
 	int i;
@@ -71,10 +48,8 @@ void conversion(t_pf *pf, va_list ap)
         conv_p(pf, ap);
 	else if(pf->convers == 'f')
         conv_f(pf, ap);
-//	else if(pf->convers == '\0')
-//		return;
-//	else
-//		pf->size += write(1, &pf->convers, 1);
+	else
+		pf->size += write(1, &pf->convers, 1);
 }
 
 int ft_printf(char *string, ...)
@@ -100,8 +75,6 @@ int ft_printf(char *string, ...)
 		}
 		else
 			pf->size++;
-//		if(pf->convers == '\0')
-//			return(0);
 		if(string[i] != '%')
 			write(1, &string[i], 1);
 		else
