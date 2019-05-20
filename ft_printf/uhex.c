@@ -6,6 +6,7 @@ char	*uxwidth(t_pf *pf, char *str, int n)
     int		i;
     int		len;
     char	*pre;
+    char    *fresh;
 
     i = -1;
     len = pf->flags[width] - (int) ft_strlen(str);
@@ -40,10 +41,18 @@ char	*uxwidth(t_pf *pf, char *str, int n)
             if (ft_strchr(str, 'X') != NULL)
                 str[1] = '0';
         }
-        return (str = ft_strjoin(pre, str));
+        fresh = ft_strjoin(pre, str);
+//        free(str);
+//        free(pre);
+        return (fresh);
     }
     else
-        return (str = ft_strjoin(str, pre));
+    {
+        fresh = ft_strjoin(str, pre);
+//        free(str);
+//        free(pre);
+        return (fresh);
+    }
 }
 
 char *uxprec(t_pf *pf, char *str, int n)
@@ -51,6 +60,7 @@ char *uxprec(t_pf *pf, char *str, int n)
     int len;
     int i;
     char *pre;
+    char *fresh;
 
     i = 0;
     len = pf->flags[prec] - (int)ft_strlen(str);
@@ -65,9 +75,10 @@ char *uxprec(t_pf *pf, char *str, int n)
         pre[1] = 'X';
     else if (pf->flags[sharp] == 1 && pf->flags[prec] != -1 && n != 0)
         pre = ft_strjoin("0X",pre);
-    str = ft_strjoin(pre, str);
-    ft_strdel(&pre);
-    return (str);
+    fresh = ft_strjoin(pre, str);
+//    free(str);
+//    free(pre);
+    return (fresh);
 }
 
 void conv_ux(t_pf *pf, va_list ap)
@@ -90,7 +101,10 @@ void conv_ux(t_pf *pf, va_list ap)
     if (pf->flags[prec] >= (int) (ft_strlen(str)) || (pf->flags[prec] > (int) (ft_strlen(str) - 1) && ft_strchr(str, '-') != NULL))
         str = uxprec(pf, str, n);
     else if (pf->flags[prec] == 0 && str[0] == '0' && str[1] == '\0')
+    {
+        //free(str);
         str = ft_strdup("\0");
+    }
     if (ft_strchr(str, 'X') == NULL)
     {
         if (pf->flags[sharp] == 1 && n != 0 && pf->flags[width] == 0 && pf->flags[prec] != -1)
@@ -108,5 +122,6 @@ void conv_ux(t_pf *pf, va_list ap)
         str = uxwidth(pf, str, n);
     pf->size += ft_strlen(str);
     ft_putstr(str);
+    //free(str);
 }
 

@@ -75,6 +75,12 @@ CMakeFiles/printf.dir/libft/ft_lstmap.c.o
 CMakeFiles/printf.dir/libft/ft_lstnew.c.o
  /Users/nwispmot/Desktop/ft_printf/libft/ft_lstnew.c
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
+CMakeFiles/printf.dir/libft/ft_ltoa.c.o
+ /Users/nwispmot/Desktop/ft_printf/libft/ft_ltoa.c
+ /Users/nwispmot/Desktop/ft_printf/libft/libft.h
+CMakeFiles/printf.dir/libft/ft_ltoa_base.c.o
+ /Users/nwispmot/Desktop/ft_printf/libft/ft_ltoa_base.c
+ /Users/nwispmot/Desktop/ft_printf/libft/libft.h
 CMakeFiles/printf.dir/libft/ft_memalloc.c.o
  /Users/nwispmot/Desktop/ft_printf/libft/ft_memalloc.c
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
@@ -167,6 +173,9 @@ CMakeFiles/printf.dir/libft/ft_striteri.c.o
 CMakeFiles/printf.dir/libft/ft_strjoin.c.o
  /Users/nwispmot/Desktop/ft_printf/libft/ft_strjoin.c
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
+CMakeFiles/printf.dir/libft/ft_strjoin_free.c.o
+ /Users/nwispmot/Desktop/ft_printf/libft/ft_strjoin_free.c
+ /Users/nwispmot/Desktop/ft_printf/libft/libft.h
 CMakeFiles/printf.dir/libft/ft_strlcat.c.o
  /Users/nwispmot/Desktop/ft_printf/libft/ft_strlcat.c
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
@@ -239,18 +248,14 @@ CMakeFiles/printf.dir/parse.c.o
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
  /Users/nwispmot/Desktop/ft_printf/parse.c
-CMakeFiles/printf.dir/percent.c.o
+CMakeFiles/printf.dir/percent_sharp.c.o
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
- /Users/nwispmot/Desktop/ft_printf/percent.c
+ /Users/nwispmot/Desktop/ft_printf/percent_sharp.c
 CMakeFiles/printf.dir/pointer.c.o
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
  /Users/nwispmot/Desktop/ft_printf/pointer.c
-CMakeFiles/printf.dir/sharp.c.o
- /Users/nwispmot/Desktop/ft_printf/ft_printf.h
- /Users/nwispmot/Desktop/ft_printf/libft/libft.h
- /Users/nwispmot/Desktop/ft_printf/sharp.c
 CMakeFiles/printf.dir/uhex.c.o
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h

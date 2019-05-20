@@ -744,6 +744,60 @@ libft/ft_lstnew.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_lstnew.c.s
 .PHONY : libft/ft_lstnew.c.s
 
+libft/ft_ltoa.o: libft/ft_ltoa.c.o
+
+.PHONY : libft/ft_ltoa.o
+
+# target to build an object file
+libft/ft_ltoa.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_ltoa.c.o
+.PHONY : libft/ft_ltoa.c.o
+
+libft/ft_ltoa.i: libft/ft_ltoa.c.i
+
+.PHONY : libft/ft_ltoa.i
+
+# target to preprocess a source file
+libft/ft_ltoa.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_ltoa.c.i
+.PHONY : libft/ft_ltoa.c.i
+
+libft/ft_ltoa.s: libft/ft_ltoa.c.s
+
+.PHONY : libft/ft_ltoa.s
+
+# target to generate assembly for a file
+libft/ft_ltoa.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_ltoa.c.s
+.PHONY : libft/ft_ltoa.c.s
+
+libft/ft_ltoa_base.o: libft/ft_ltoa_base.c.o
+
+.PHONY : libft/ft_ltoa_base.o
+
+# target to build an object file
+libft/ft_ltoa_base.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_ltoa_base.c.o
+.PHONY : libft/ft_ltoa_base.c.o
+
+libft/ft_ltoa_base.i: libft/ft_ltoa_base.c.i
+
+.PHONY : libft/ft_ltoa_base.i
+
+# target to preprocess a source file
+libft/ft_ltoa_base.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_ltoa_base.c.i
+.PHONY : libft/ft_ltoa_base.c.i
+
+libft/ft_ltoa_base.s: libft/ft_ltoa_base.c.s
+
+.PHONY : libft/ft_ltoa_base.s
+
+# target to generate assembly for a file
+libft/ft_ltoa_base.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_ltoa_base.c.s
+.PHONY : libft/ft_ltoa_base.c.s
+
 libft/ft_memalloc.o: libft/ft_memalloc.c.o
 
 .PHONY : libft/ft_memalloc.o
@@ -1581,6 +1635,33 @@ libft/ft_strjoin.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_strjoin.c.s
 .PHONY : libft/ft_strjoin.c.s
 
+libft/ft_strjoin_free.o: libft/ft_strjoin_free.c.o
+
+.PHONY : libft/ft_strjoin_free.o
+
+# target to build an object file
+libft/ft_strjoin_free.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_strjoin_free.c.o
+.PHONY : libft/ft_strjoin_free.c.o
+
+libft/ft_strjoin_free.i: libft/ft_strjoin_free.c.i
+
+.PHONY : libft/ft_strjoin_free.i
+
+# target to preprocess a source file
+libft/ft_strjoin_free.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_strjoin_free.c.i
+.PHONY : libft/ft_strjoin_free.c.i
+
+libft/ft_strjoin_free.s: libft/ft_strjoin_free.c.s
+
+.PHONY : libft/ft_strjoin_free.s
+
+# target to generate assembly for a file
+libft/ft_strjoin_free.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_strjoin_free.c.s
+.PHONY : libft/ft_strjoin_free.c.s
+
 libft/ft_strlcat.o: libft/ft_strlcat.c.o
 
 .PHONY : libft/ft_strlcat.o
@@ -2202,32 +2283,32 @@ parse.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse.c.s
 .PHONY : parse.c.s
 
-percent.o: percent.c.o
+percent_sharp.o: percent_sharp.c.o
 
-.PHONY : percent.o
+.PHONY : percent_sharp.o
 
 # target to build an object file
-percent.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/percent.c.o
-.PHONY : percent.c.o
+percent_sharp.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/percent_sharp.c.o
+.PHONY : percent_sharp.c.o
 
-percent.i: percent.c.i
+percent_sharp.i: percent_sharp.c.i
 
-.PHONY : percent.i
+.PHONY : percent_sharp.i
 
 # target to preprocess a source file
-percent.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/percent.c.i
-.PHONY : percent.c.i
+percent_sharp.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/percent_sharp.c.i
+.PHONY : percent_sharp.c.i
 
-percent.s: percent.c.s
+percent_sharp.s: percent_sharp.c.s
 
-.PHONY : percent.s
+.PHONY : percent_sharp.s
 
 # target to generate assembly for a file
-percent.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/percent.c.s
-.PHONY : percent.c.s
+percent_sharp.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/percent_sharp.c.s
+.PHONY : percent_sharp.c.s
 
 pointer.o: pointer.c.o
 
@@ -2255,33 +2336,6 @@ pointer.s: pointer.c.s
 pointer.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/pointer.c.s
 .PHONY : pointer.c.s
-
-sharp.o: sharp.c.o
-
-.PHONY : sharp.o
-
-# target to build an object file
-sharp.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/sharp.c.o
-.PHONY : sharp.c.o
-
-sharp.i: sharp.c.i
-
-.PHONY : sharp.i
-
-# target to preprocess a source file
-sharp.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/sharp.c.i
-.PHONY : sharp.c.i
-
-sharp.s: sharp.c.s
-
-.PHONY : sharp.s
-
-# target to generate assembly for a file
-sharp.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/sharp.c.s
-.PHONY : sharp.c.s
 
 uhex.o: uhex.c.o
 
@@ -2442,6 +2496,12 @@ help:
 	@echo "... libft/ft_lstnew.o"
 	@echo "... libft/ft_lstnew.i"
 	@echo "... libft/ft_lstnew.s"
+	@echo "... libft/ft_ltoa.o"
+	@echo "... libft/ft_ltoa.i"
+	@echo "... libft/ft_ltoa.s"
+	@echo "... libft/ft_ltoa_base.o"
+	@echo "... libft/ft_ltoa_base.i"
+	@echo "... libft/ft_ltoa_base.s"
 	@echo "... libft/ft_memalloc.o"
 	@echo "... libft/ft_memalloc.i"
 	@echo "... libft/ft_memalloc.s"
@@ -2535,6 +2595,9 @@ help:
 	@echo "... libft/ft_strjoin.o"
 	@echo "... libft/ft_strjoin.i"
 	@echo "... libft/ft_strjoin.s"
+	@echo "... libft/ft_strjoin_free.o"
+	@echo "... libft/ft_strjoin_free.i"
+	@echo "... libft/ft_strjoin_free.s"
 	@echo "... libft/ft_strlcat.o"
 	@echo "... libft/ft_strlcat.i"
 	@echo "... libft/ft_strlcat.s"
@@ -2604,15 +2667,12 @@ help:
 	@echo "... parse.o"
 	@echo "... parse.i"
 	@echo "... parse.s"
-	@echo "... percent.o"
-	@echo "... percent.i"
-	@echo "... percent.s"
+	@echo "... percent_sharp.o"
+	@echo "... percent_sharp.i"
+	@echo "... percent_sharp.s"
 	@echo "... pointer.o"
 	@echo "... pointer.i"
 	@echo "... pointer.s"
-	@echo "... sharp.o"
-	@echo "... sharp.i"
-	@echo "... sharp.s"
 	@echo "... uhex.o"
 	@echo "... uhex.i"
 	@echo "... uhex.s"

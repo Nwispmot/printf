@@ -75,6 +75,12 @@ CMakeFiles/printf.dir/libft/ft_lstmap.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/libft/ft_lstnew.c.o: ../libft/ft_lstnew.c
 CMakeFiles/printf.dir/libft/ft_lstnew.c.o: ../libft/libft.h
 
+CMakeFiles/printf.dir/libft/ft_ltoa.c.o: ../libft/ft_ltoa.c
+CMakeFiles/printf.dir/libft/ft_ltoa.c.o: ../libft/libft.h
+
+CMakeFiles/printf.dir/libft/ft_ltoa_base.c.o: ../libft/ft_ltoa_base.c
+CMakeFiles/printf.dir/libft/ft_ltoa_base.c.o: ../libft/libft.h
+
 CMakeFiles/printf.dir/libft/ft_memalloc.c.o: ../libft/ft_memalloc.c
 CMakeFiles/printf.dir/libft/ft_memalloc.c.o: ../libft/libft.h
 
@@ -167,6 +173,9 @@ CMakeFiles/printf.dir/libft/ft_striteri.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/libft/ft_strjoin.c.o: ../libft/ft_strjoin.c
 CMakeFiles/printf.dir/libft/ft_strjoin.c.o: ../libft/libft.h
 
+CMakeFiles/printf.dir/libft/ft_strjoin_free.c.o: ../libft/ft_strjoin_free.c
+CMakeFiles/printf.dir/libft/ft_strjoin_free.c.o: ../libft/libft.h
+
 CMakeFiles/printf.dir/libft/ft_strlcat.c.o: ../libft/ft_strlcat.c
 CMakeFiles/printf.dir/libft/ft_strlcat.c.o: ../libft/libft.h
 
@@ -239,17 +248,13 @@ CMakeFiles/printf.dir/parse.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/parse.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/parse.c.o: ../parse.c
 
-CMakeFiles/printf.dir/percent.c.o: ../ft_printf.h
-CMakeFiles/printf.dir/percent.c.o: ../libft/libft.h
-CMakeFiles/printf.dir/percent.c.o: ../percent.c
+CMakeFiles/printf.dir/percent_sharp.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/percent_sharp.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/percent_sharp.c.o: ../percent_sharp.c
 
 CMakeFiles/printf.dir/pointer.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/pointer.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/pointer.c.o: ../pointer.c
-
-CMakeFiles/printf.dir/sharp.c.o: ../ft_printf.h
-CMakeFiles/printf.dir/sharp.c.o: ../libft/libft.h
-CMakeFiles/printf.dir/sharp.c.o: ../sharp.c
 
 CMakeFiles/printf.dir/uhex.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/uhex.c.o: ../libft/libft.h

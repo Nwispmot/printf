@@ -22,7 +22,7 @@ int		cwidth(t_pf *pf)
 	while (i < pf->flags[width] - 1)
 	{
 		if (pf->flags[zero] == 1)
-			 count += write(1, "0", 1);
+			count += write(1, "0", 1);
 		else
 			count += write(1, " ", 1);
 		i++;
@@ -49,7 +49,8 @@ void	conv_c(t_pf *pf, va_list ap)
 
 void	conv_s(t_pf *pf, va_list ap)
 {
-	char	*s;
+	char *s;
+
 	s = va_arg(ap, char *);
 	if (s == NULL)
 		s = ft_strdup("(null)");
@@ -57,7 +58,7 @@ void	conv_s(t_pf *pf, va_list ap)
 		s = ft_strsub(s, 0, (size_t)pf->flags[prec]);
 	if (pf->flags[width] != 0)
 	{
-		if (pf->flags[width] > (int) ft_strlen(s))
+		if (pf->flags[width] > (int)ft_strlen(s))
 			s = swidth(pf, s);
 	}
 	pf->size += ft_strlen(s);

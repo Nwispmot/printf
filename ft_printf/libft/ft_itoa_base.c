@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-static size_t	digit_count(unsigned long long nb, int base)
+static int	digit_count(unsigned long long nb, int base)
 {
-    size_t		i;
+    int		i;
 
     i = 0;
     while (nb)
@@ -42,6 +42,8 @@ char			*ft_itoa_base(unsigned long long value, int base, int uppercase)
         tab_base = "0123456789ABCDEF";
     len = digit_count(value, base);
     ret = (char *)malloc(sizeof(char) * (len + 1));
+    if (!ret)
+    	return(NULL);
     i = 1;
     while (value != 0)
     {

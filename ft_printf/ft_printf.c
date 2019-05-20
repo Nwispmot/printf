@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void init(t_pf *pf)
+void	init(t_pf *pf)
 {
 	int i;
 
@@ -26,43 +26,38 @@ void init(t_pf *pf)
 	pf->flags[prec] = -1;
 }
 
-void conversion(t_pf *pf, va_list ap)
+void	conversion(t_pf *pf, va_list ap)
 {
-	if(pf->convers == 'd' || pf->convers == 'i')
+	if (pf->convers == 'd' || pf->convers == 'i')
 		conv_di(pf, ap);
-	else if(pf->convers == 's')
+	else if (pf->convers == 's')
 		conv_s(pf, ap);
-	else if(pf->convers == 'c')
+	else if (pf->convers == 'c')
 		conv_c(pf, ap);
-	else if(pf->convers == 'u')
+	else if (pf->convers == 'u')
 		conv_u(pf, ap);
-	else if(pf->convers == 'o')
+	else if (pf->convers == 'o')
 		conv_o(pf, ap);
-	else if(pf->convers == 'x')
-        conv_lx(pf, ap);
-	else if(pf->convers == 'X')
-        conv_ux(pf, ap);
-	else if(pf->convers == '%')
-        conv_percent(pf, ap);
-	else if(pf->convers == 'p')
-        conv_p(pf, ap);
-	else if(pf->convers == 'f')
-        conv_f(pf, ap);
+	else if (pf->convers == 'x')
+		conv_lx(pf, ap);
+	else if (pf->convers == 'X')
+		conv_ux(pf, ap);
+	else if (pf->convers == '%')
+		conv_percent(pf, ap);
+	else if (pf->convers == 'p')
+		conv_p(pf, ap);
+	else if (pf->convers == 'f')
+		conv_f(pf, ap);
 	else
 		pf->size += write(1, &pf->convers, 1);
 }
 
-int ft_printf(char *string, ...)
+void	val(t_pf *pf, va_list ap, char *string)
 {
 	int i;
-	va_list ap;
-	t_pf *pf;
 
-	pf = (t_pf*)malloc(sizeof(t_pf));
-	pf->size = 0;
 	i = -1;
-	va_start(ap, string);
-	while(string[++i])
+	while (string[++i])
 	{
 		if (string[i] == '%')
 		{
@@ -70,12 +65,12 @@ int ft_printf(char *string, ...)
 			i += parse(&string[i], pf);
 			conversion(pf, ap);
 			if (string[i] == '\0')
-				break;
+				break ;
 			pf->size++;
 		}
 		else
 			pf->size++;
-		if(string[i] != '%')
+		if (string[i] != '%')
 			write(1, &string[i], 1);
 		else
 		{
@@ -83,6 +78,20 @@ int ft_printf(char *string, ...)
 			pf->size--;
 		}
 	}
+}
+
+int		ft_printf(char *string, ...)
+{
+	va_list	ap;
+	t_pf	*pf;
+	int size;
+
+	pf = (t_pf*)malloc(sizeof(t_pf));
+	pf->size = 0;
+	va_start(ap, string);
+	val(pf, ap, string);
 	va_end(ap);
-	return (pf->size);
+	size = pf->size;
+	free(pf);
+	return (size);
 }

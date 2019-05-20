@@ -1,5 +1,18 @@
 #include "ft_printf.h"
 
+char *ft_sharp(char *str)
+{
+	char *mem;
+
+    if (str[0] != '0')
+    {
+    	mem = str;
+		str = ft_strjoin("0", str);
+		free(mem);
+	}
+    return(str);
+}
+
 void conv_percent(t_pf *pf, va_list ap)
 {
     int i;

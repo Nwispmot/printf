@@ -100,5 +100,8 @@ char				*ft_utoa(unsigned long long int n);
 char				*ft_itoa_base(unsigned long long n, int base, int uppercase);
 char				*ft_ftoa(long double value);
 double				ft_pow(double x, double y);
+char				*ft_strjoin_free(char *s1, char *s2, int free1, int free2);
+char				*ft_ltoa(long long n);
+char				*ft_unsigned_ltoa_base(unsigned long long value, int base, char c);
 
 #endif

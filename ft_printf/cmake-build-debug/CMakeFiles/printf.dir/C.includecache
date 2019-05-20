@@ -6,9 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/nwispmot/Desktop/ft_printf/libft/ft_itoa.c
-libft.h
+/Users/nwispmot/Desktop/ft_printf/ft_printf.h
+libft/libft.h
 /Users/nwispmot/Desktop/ft_printf/libft/libft.h
+stdarg.h
+-
+stdlib.h
+-
+stdio.h
+-
 
 /Users/nwispmot/Desktop/ft_printf/libft/libft.h
 sys/types.h
@@ -22,5 +28,13 @@ string.h
 stdlib.h
 -
 unistd.h
+-
+
+/Users/nwispmot/Desktop/ft_printf/main.c
+ft_printf.h
+/Users/nwispmot/Desktop/ft_printf/ft_printf.h
+math.h
+-
+limits.h
 -
 

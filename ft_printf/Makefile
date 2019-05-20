@@ -12,13 +12,12 @@ SRC 	 = ft_printf.c \
            char_str.c \
            width.c \
            unsigned.c \
-           sharp.c \
            octal.c \
            lhex.c \
            uhex.c \
            pointer.c \
            float.c \
-           percent.c
+           percent_sharp.c
 
 OBJ 	 = $(addprefix $(OBJ_DIR)/,$(SRC:.c=.o))
 

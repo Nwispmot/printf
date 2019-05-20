@@ -156,6 +156,12 @@
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/libft/ft_lstnew.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/nwispmot/Desktop/ft_printf/libft/ft_ltoa.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/nwispmot/Desktop/ft_printf/libft/ft_ltoa_base.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/libft/ft_memalloc.c">
 			<Option target="printf"/>
 		</Unit>
@@ -249,6 +255,9 @@
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/libft/ft_strjoin.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/nwispmot/Desktop/ft_printf/libft/ft_strjoin_free.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/libft/ft_strlcat.c">
 			<Option target="printf"/>
 		</Unit>
@@ -324,13 +333,10 @@
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/parse.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/nwispmot/Desktop/ft_printf/percent.c">
+		<Unit filename="/Users/nwispmot/Desktop/ft_printf/percent_sharp.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/pointer.c">
-			<Option target="printf"/>
-		</Unit>
-		<Unit filename="/Users/nwispmot/Desktop/ft_printf/sharp.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/nwispmot/Desktop/ft_printf/uhex.c">

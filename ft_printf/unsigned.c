@@ -36,6 +36,7 @@ char	*uwidth(t_pf *pf, char *str, intmax_t n)
 	int		i;
 	int		len;
 	char	*pre;
+	char 	*fresh;
 
 	i = -1;
 	len = pf->flags[width] - (int) ft_strlen(str);
@@ -54,10 +55,10 @@ char	*uwidth(t_pf *pf, char *str, intmax_t n)
 		str[0] = '0';
 	}
 	pre[i] = '\0';
-	if (pf->flags[minus] == 0)
-		return(str = ft_strjoin(pre, str));
-	else
-		return (str = ft_strjoin(str, pre));
+	fresh = pf->flags[minus] == 0 ? ft_strjoin(pre, str) :  ft_strjoin(str, pre);
+	free(str);
+	free(pre);
+	return(fresh);
 }
 
 char *uplus(char *str)
@@ -67,6 +68,8 @@ char *uplus(char *str)
 
 	plus = ft_strdup("+");
 	fresh = ft_strjoin(plus, str);
+	free(str);
+	free(plus);
 	return (fresh);
 }
 
@@ -75,12 +78,13 @@ char *uprec(t_pf *pf, char *str)
 	int len;
 	int i;
 	char *pre;
+	char *fresh;
 
 	i = 0;
 	len = pf->flags[prec] - (int)ft_strlen(str);
 	if (ft_strchr(str, '-') != NULL || ft_strchr(str, '+') != NULL)
 		len++;
-	pre = (char*)malloc((sizeof(char)) * (len + 1));
+	pre = ft_strnew(len);
 	while(i < len)
 	{
 		pre[i] = '0';
@@ -96,10 +100,11 @@ char *uprec(t_pf *pf, char *str)
 		pre[0] = '+';
 		str[0] = '0';
 	}
-	pre[i] = '\0';
-	str = ft_strjoin(pre, str);
-	ft_strdel(&pre);
-	return (str);
+	//pre[i] = '\0';
+	fresh = ft_strjoin(pre, str);
+	free(str);
+	free(pre);
+	return (fresh);
 }
 
 void conv_u(t_pf *pf, va_list ap)
@@ -125,13 +130,11 @@ void conv_u(t_pf *pf, va_list ap)
 		str = uprec(pf, str);
 	else if (pf->flags[prec] == 0 && str[0] == '0' && str[1] == '\0')
 		str[0] = '\0';
-//	pre = ft_strdup(" ");
 	if (pf->flags[plus] == 1 && n == 0)
 		str = uplus(str);
-//	if (pf->flags[space] == 1)
-//		str = ft_strjoin(pre, str);
 	if (pf->flags[width] != 0 && (pf->flags[width] > (int)ft_strlen(str)))
 		str = uwidth(pf, str, n);
 	pf->size += ft_strlen(str);
 	ft_putstr(str);
+	free(str);
 }

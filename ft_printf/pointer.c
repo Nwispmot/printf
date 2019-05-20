@@ -64,10 +64,8 @@ char *pprec(t_pf *pf, char *str, void *n)
         pre[1] = 'x';
     else if (pf->flags[prec] != -1 && n != 0)
         pre = ft_strjoin("0x",pre);
-//	    else if (pf->flags[prec] == 0 && n == 0)
-//	        pre = ft_strjoin("0x",pre);
     str = ft_strjoin(pre, str);
-    ft_strdel(&pre);
+    //ft_strdel(&pre);
     return (str);
 }
 

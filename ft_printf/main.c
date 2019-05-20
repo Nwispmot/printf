@@ -1,7 +1,7 @@
 #include "ft_printf.h"
 #include <math.h>
 #include <limits.h>
-void float_checker()
+/*void float_checker()
 {
 	printf("og: %015f\n", -2.0f);
 	ft_printf("my: %015f\n", -2.0f);
@@ -172,10 +172,15 @@ void float_checker()
 	printf("og: %-010.4f|\n", 3.3399999);
 	 ft_printf("my: %-010.4f|\n", 3.3399999);
 	 printf("og: %-010.4f|\n", 3.3399999);
-}
+}*/
 int main()
 {
-
+	//ft_printf("% +u10.5\n", 1231234565432345534);
+//	printf(" |%d\n", printf("%+d", 10));
+//	printf(" |%d\n", ft_printf("%+d", 10));
+//	ft_printf("%.u, %.0u", 0, 0);
+//	ft_printf("%8.4u", 424242424);
+//	ft_printf("%.d, %.0d", 0, 0);
 	//float_checker();
 //	int a = -22;
 //	int b;
@@ -189,8 +194,8 @@ int main()
 
 
 
-//	int i = 0;
-//
+	//int i = 0;
+
 
 //	printf("% Zoooo\n");
 //	ft_printf("% Zoooo\n");
@@ -231,10 +236,10 @@ int main()
 //
 //	ft_printf("%d)my: %f|\n", -9.88, i++);
 //	printf("og: %f|\n", -9.88);
-//
+
 //	ft_printf("%d)my: %.f|\n", 999999.99, i++);
 //	printf("og: %.f|\n\n", 999999.99);
-//
+
 //	ft_printf("%d)my: %.f|\n", 89.99, i++);
 //	printf("og: %.f|\n\n", 89.99);
 //
@@ -263,24 +268,23 @@ int main()
 //	ft_printf("%d)my: %f|\n", 10.01010101, i++);
 //	printf("og: %f|\n\n", 10.01010101);
 //
-//	ft_printf("%d)my: %f|\n", 0.0000, i++);
-//	printf("og: %f|\n\n", 0.0000);
-//
-//	ft_printf("%d)my: %.2f|\n", 9.9999999, i++);
-//	printf("og: %.2f|\n\n", 9.9999999);
-//
-//	ft_printf("%d)my: %.f|\n", 9.9999999, i++);
-//	printf("og: %.f|\n\n", 9.9999999);
-//
-//	printf("%jd\n", 1234567);
-//	ft_printf("%jd\n", 1234567);
+	//ft_printf("%d)my: %f|\n", 0.0000, i++);
+	//printf("og: %f|\n\n", 0.0000);
 
-	printf(" |%d\n", printf("%ld", LONG_MAX));
-	printf(" |%d\n", ft_printf("%ld", LONG_MAX));
+	//ft_printf("%d)my: %.2f|\n", 9.9999999, i++);
+	//printf("og: %.2f|\n\n", 9.9999999);
 
-	printf(" |%d\n", printf("%kad", 5));
-	printf(" |%d\n", ft_printf("%kad", 5));
+	//ft_printf("%d)my: %.f|\n", 9.9999999, i++);
+	//printf("og: %.f|\n\n", 9.9999999);
 
+	//printf("%jd\n", 1234567);
+	//ft_printf("%jd\n", 1234567);
+//
+
+//
+	//printf(" |%d\n", printf("%o", 54484845454454));
+	printf(" |%d\n", ft_printf("%+o", 54484845454454));
+//
 //	printf(" |%d\n", printf("%#.o, %#.0o", 0, 0));
 //	printf(" |%d\n", ft_printf("%#.o, %#.0o", 0, 0));
 

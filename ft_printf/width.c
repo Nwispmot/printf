@@ -25,6 +25,7 @@ char	*iwidth(t_pf *pf, char *str, intmax_t n)
 	int		i;
 	int		len;
 	char	*pre;
+	char 	*fresh;
 
 	i = -1;
 	len = pf->flags[width] - (int) ft_strlen(str);
@@ -43,10 +44,8 @@ char	*iwidth(t_pf *pf, char *str, intmax_t n)
 		str[0] = '0';
 	}
 	pre[i] = '\0';
-	if (pf->flags[minus] == 0)
-		return(str = ft_strjoin(pre, str));
-	else
-		return (str = ft_strjoin(str, pre));
+	fresh = pf->flags[minus] == 0 ? ft_strjoin(pre, str) :  ft_strjoin(str, pre);
+	return(fresh);
 }
 
 
@@ -55,10 +54,12 @@ char	*swidth(t_pf *pf, char *str)
 	int		i;
 	int		len;
 	char	*pre;
+	char	*fresh;
 
 	i = 0;
 	len = pf->flags[width] - (int) ft_strlen(str);
 	pre = (char *) malloc((sizeof(char)) * (len + 1));
+	fresh = NULL;
 	while (i < len)
 	{
 		if (pf->flags[zero] == 1)
@@ -69,10 +70,10 @@ char	*swidth(t_pf *pf, char *str)
 	}
 	pre[i] = '\0';
 	if (pf->flags[minus] == 0)
-		str = ft_strjoin(pre, str);
+		fresh = ft_strjoin(pre, str);
 	else if (pf->flags[minus] == 1)
-		str = ft_strjoin(str, pre);
-	return (str);
+		fresh = ft_strjoin(str, pre);
+	return (fresh);
 }
 
 char	*fwidth(t_pf *pf, char *str, intmax_t n)
@@ -80,10 +81,11 @@ char	*fwidth(t_pf *pf, char *str, intmax_t n)
 	int		i;
 	int		len;
 	char	*pre;
+	char	*fresh;
 
 	i = -1;
 	len = pf->flags[width] - (int) ft_strlen(str);
-	pre = (char *) malloc((sizeof(char)) * ((pf->flags[width] - (int) ft_strlen(str)) + 1));
+	pre = ft_strnew(len);
 	while (++i < len)
 	{
 		if (pf->flags[zero] == 1 && str[0] != 'n')
@@ -98,8 +100,6 @@ char	*fwidth(t_pf *pf, char *str, intmax_t n)
 		str[0] = '0';
 	}
 	pre[i] = '\0';
-	if (pf->flags[minus] == 0)
-		return(str = ft_strjoin(pre, str));
-	else
-		return (str = ft_strjoin(str, pre));
+	fresh = pf->flags[minus] == 0 ? ft_strjoin(pre, str) :  ft_strjoin(str, pre);
+	return(fresh);
 }
