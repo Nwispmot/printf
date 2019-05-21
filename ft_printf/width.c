@@ -44,7 +44,7 @@ char	*iwidth(t_pf *pf, char *str, intmax_t n)
 		str[0] = '0';
 	}
 	pre[i] = '\0';
-	fresh = pf->flags[minus] == 0 ? ft_strjoin(pre, str) :  ft_strjoin(str, pre);
+	fresh = pf->flags[minus] == 0 ? ft_strjoin_free(pre, str, 1, 1) :  ft_strjoin_free(str, pre, 1, 1);
 	return(fresh);
 }
 
@@ -70,9 +70,9 @@ char	*swidth(t_pf *pf, char *str)
 	}
 	pre[i] = '\0';
 	if (pf->flags[minus] == 0)
-		fresh = ft_strjoin(pre, str);
+		fresh = ft_strjoin_free(pre, str, 1, 1);
 	else if (pf->flags[minus] == 1)
-		fresh = ft_strjoin(str, pre);
+		fresh = ft_strjoin_free(str, pre, 1, 1);
 	return (fresh);
 }
 
@@ -100,6 +100,6 @@ char	*fwidth(t_pf *pf, char *str, intmax_t n)
 		str[0] = '0';
 	}
 	pre[i] = '\0';
-	fresh = pf->flags[minus] == 0 ? ft_strjoin(pre, str) :  ft_strjoin(str, pre);
+	fresh = pf->flags[minus] == 0 ? ft_strjoin_free(pre, str, 1, 1) :  ft_strjoin_free(str, pre, 1, 1);
 	return(fresh);
 }

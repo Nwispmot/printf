@@ -55,21 +55,15 @@ char	*uwidth(t_pf *pf, char *str, intmax_t n)
 		str[0] = '0';
 	}
 	pre[i] = '\0';
-	fresh = pf->flags[minus] == 0 ? ft_strjoin(pre, str) :  ft_strjoin(str, pre);
-	free(str);
-	free(pre);
+	fresh = pf->flags[minus] == 0 ? ft_strjoin_free(pre, str, 1, 1) :  ft_strjoin_free(str, pre, 1, 1);
 	return(fresh);
 }
 
 char *uplus(char *str)
 {
-	char *plus;
 	char *fresh;
 
-	plus = ft_strdup("+");
-	fresh = ft_strjoin(plus, str);
-	free(str);
-	free(plus);
+	fresh = ft_strjoin_free("+", str, 0, 1);
 	return (fresh);
 }
 
@@ -101,9 +95,7 @@ char *uprec(t_pf *pf, char *str)
 		str[0] = '0';
 	}
 	//pre[i] = '\0';
-	fresh = ft_strjoin(pre, str);
-	free(str);
-	free(pre);
+	fresh = ft_strjoin_free(pre, str, 1, 1);
 	return (fresh);
 }
 

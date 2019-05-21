@@ -8,11 +8,10 @@ char    *ftoa(t_pf *pf, long double value, int re)
 	int i = 0;
 	char *ret;
 	char *integer;
-	char *mem;
 
 	bval = value;
 	re++;
-	integer = ft_itoa(value);
+	integer = ft_ltoa(value);
 	if (value < 0)
 		value *= -1;
 	if (pf->flags[prec] != -1)
@@ -43,27 +42,27 @@ char    *ftoa(t_pf *pf, long double value, int re)
 			bval > 0 ? bval++ : bval--;
 			free(integer);
 			free(ret);
-			return(ft_itoa(bval));
+			return(ft_ltoa(bval));
 		}
 		t++;
 		ret[i - 1] = (char) (t + '0');
 	}
-	mem = ret;
-	ret = ft_strjoin(integer, ret);
-	free(mem);
+	ret = ft_strjoin_free(integer, ret, 0, 1);
 	if (re == 1)
 	{
-		free(integer);
+//		free(integer);
 		free(ret);
 		ret = ftoa(pf, bval, re);
 	}
 	if (len > 1)
 	{
-		free(integer);
+		//if(re != 1)
+			free(integer);
 		return (ret);
 	}
 	else
 	{
+		//if ()
 		free(ret);
 		return(integer);
 	}
@@ -71,18 +70,32 @@ char    *ftoa(t_pf *pf, long double value, int re)
 
 static char *fcheck(t_pf *pf, long double	n, char *str)
 {
+	char *del;
+
 	if (n != n)
+	{
+		del = str;
 		str = ft_strdup("nan");
+		free(del);
+	}
 	if (n == +1 / 0.0)
+	{
+		del = str;
 		str = ft_strdup("inf");
+		free(del);
+	}
 	if (n == -1 / 0.0)
+	{
+		del = str;
 		str = ft_strdup("-inf");
+		free(del);
+	}
 	if (pf->flags[plus] == 1 && n > 0)
 		str = iplus(str);
 	if (pf->flags[plus] == 1 && n == 0)
 		str = iplus(str);
 	if (pf->flags[space] == 1 && n >= 0)
-		str = ft_strjoin(" ", str);
+		str = ft_strjoin_free(" ", str, 0, 1);
 	if (pf->flags[width] != 0 && (pf->flags[width] > (int)ft_strlen(str)))
 		str = fwidth(pf, str, n);
 	return (str);
@@ -92,7 +105,6 @@ void conv_f(t_pf *pf, va_list ap)
 {
     long double	n;
     char		*str;
-    char 		*mem;
 
     if (pf->flags[L] == 1)
         n = va_arg(ap,  long double);
@@ -102,15 +114,12 @@ void conv_f(t_pf *pf, va_list ap)
     {
 		str = ftoa(pf, n, -1);
 		if(pf->flags[sharp] == 1)
-		{
-			mem = str;
-			str = ft_strjoin(str, ".");
-			free(mem);
-		}
+			str = ft_strjoin_free(str, ".", 1, 0);
 	}
     else
         str = ftoa(pf, n, -1);
 	str = fcheck(pf, n, str);
     pf->size += ft_strlen(str);
     ft_putstr(str);
+    free(str);
 }

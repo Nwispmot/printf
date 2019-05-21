@@ -50,17 +50,29 @@ void	conv_c(t_pf *pf, va_list ap)
 void	conv_s(t_pf *pf, va_list ap)
 {
 	char *s;
+	char *str;
+	char *del;
 
 	s = va_arg(ap, char *);
+	if (s != NULL)
+	{
+		str = ft_strnew(ft_strlen(s));
+		str = ft_strcpy(str, s);
+	}
 	if (s == NULL)
-		s = ft_strdup("(null)");
+		str = ft_strdup("(null)");
 	if (pf->flags[prec] != -1)
-		s = ft_strsub(s, 0, (size_t)pf->flags[prec]);
+	{
+		del = str;
+		str = ft_strsub(str, 0, (size_t) pf->flags[prec]);
+		free(del);
+	}
 	if (pf->flags[width] != 0)
 	{
-		if (pf->flags[width] > (int)ft_strlen(s))
-			s = swidth(pf, s);
+		if (pf->flags[width] > (int)ft_strlen(str))
+			str = swidth(pf, str);
 	}
-	pf->size += ft_strlen(s);
-	ft_putstr(s);
+	pf->size += ft_strlen(str);
+	ft_putstr(str);
+	free(str);
 }

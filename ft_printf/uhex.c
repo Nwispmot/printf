@@ -41,16 +41,12 @@ char	*uxwidth(t_pf *pf, char *str, int n)
             if (ft_strchr(str, 'X') != NULL)
                 str[1] = '0';
         }
-        fresh = ft_strjoin(pre, str);
-//        free(str);
-//        free(pre);
+        fresh = ft_strjoin_free(pre, str, 1, 1);
         return (fresh);
     }
     else
     {
-        fresh = ft_strjoin(str, pre);
-//        free(str);
-//        free(pre);
+        fresh = ft_strjoin_free(str, pre, 1, 1);
         return (fresh);
     }
 }
@@ -74,10 +70,8 @@ char *uxprec(t_pf *pf, char *str, int n)
     if (pf->flags[sharp] == 1 && pf->flags[width] != 0 && pf->flags[prec] == -1 && n != 0)
         pre[1] = 'X';
     else if (pf->flags[sharp] == 1 && pf->flags[prec] != -1 && n != 0)
-        pre = ft_strjoin("0X",pre);
-    fresh = ft_strjoin(pre, str);
-//    free(str);
-//    free(pre);
+        pre = ft_strjoin_free("0X", pre, 0, 1);
+    fresh = ft_strjoin_free(pre, str, 1, 1);
     return (fresh);
 }
 
@@ -85,6 +79,7 @@ void conv_ux(t_pf *pf, va_list ap)
 {
     uintmax_t n;
     char *str;
+    char *del;
 
     if (pf->flags[l] == 1)
         n = va_arg(ap, unsigned long int);
@@ -97,31 +92,33 @@ void conv_ux(t_pf *pf, va_list ap)
     if (pf->flags[hh] == 1)
         n = (unsigned char) n;
 
-    str = ft_itoa_base(n, 16, 1);
+    //str = ft_itoa_base(n, 16, 1);
+    str = ft_unsigned_ltoa_base(n, 16, 'X' - 23);
     if (pf->flags[prec] >= (int) (ft_strlen(str)) || (pf->flags[prec] > (int) (ft_strlen(str) - 1) && ft_strchr(str, '-') != NULL))
         str = uxprec(pf, str, n);
     else if (pf->flags[prec] == 0 && str[0] == '0' && str[1] == '\0')
     {
-        //free(str);
+        del = str;
         str = ft_strdup("\0");
+        free(del);
     }
     if (ft_strchr(str, 'X') == NULL)
     {
         if (pf->flags[sharp] == 1 && n != 0 && pf->flags[width] == 0 && pf->flags[prec] != -1)
-            str = ft_strjoin("0X", str);
+            str = ft_strjoin_free("0X", str, 0, 1);
         else if (pf->flags[sharp] == 1 && n != 0 && pf->flags[width] == 0 && pf->flags[prec] != -1)
-            str = ft_strjoin("0X", str);
+            str = ft_strjoin_free("0X", str, 0, 1);
         else if (pf->flags[sharp] == 1 && n != 0 && pf->flags[width] == 0 && pf->flags[prec] == -1)
-            str = ft_strjoin("0X", str);
+            str = ft_strjoin_free("0X", str, 0, 1);
         else if (pf->flags[sharp] == 1 && n != 0 && pf->flags[width] != 0 && pf->flags[prec] == -1)
-            str = ft_strjoin("0X", str);
+            str = ft_strjoin_free("0X", str, 0, 1);
         else if (pf->flags[sharp] == 1 && n != 0 && pf->flags[width] != 0 && pf->flags[prec] != -1)
-            str = ft_strjoin("0X", str);
+            str = ft_strjoin_free("0X", str, 0, 1);
     }
     if (pf->flags[width] != 0 && (pf->flags[width] > (int)ft_strlen(str)))
         str = uxwidth(pf, str, n);
     pf->size += ft_strlen(str);
     ft_putstr(str);
-    //free(str);
+    free(str);
 }
 

@@ -2,14 +2,8 @@
 
 char *ft_sharp(char *str)
 {
-	char *mem;
-
     if (str[0] != '0')
-    {
-    	mem = str;
-		str = ft_strjoin("0", str);
-		free(mem);
-	}
+		str = ft_strjoin_free("0", str, 0, 1);
     return(str);
 }
 

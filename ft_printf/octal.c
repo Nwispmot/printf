@@ -102,7 +102,6 @@ void conv_o(t_pf *pf, va_list ap) {
 
 	uintmax_t n;
 	char *str;
-//	char *del;
 
 	if (pf->flags[l] == 1)
 		n = va_arg(ap, unsigned long int);

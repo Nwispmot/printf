@@ -39,10 +39,10 @@ char	*pwidth(t_pf *pf, char *str)
             if (ft_strchr(str, 'x') != NULL)
                 str[1] = '0';
         }
-        return (str = ft_strjoin(pre, str));
+        return (str = ft_strjoin_free(pre, str, 1, 1));
     }
     else
-        return (str = ft_strjoin(str, pre));
+        return (str = ft_strjoin_free(str, pre, 1, 1));
 }
 
 char *pprec(t_pf *pf, char *str, void *n)
@@ -63,9 +63,8 @@ char *pprec(t_pf *pf, char *str, void *n)
     if (pf->flags[width] != 0 && pf->flags[prec] == -1)
         pre[1] = 'x';
     else if (pf->flags[prec] != -1 && n != 0)
-        pre = ft_strjoin("0x",pre);
-    str = ft_strjoin(pre, str);
-    //ft_strdel(&pre);
+        pre = ft_strjoin_free("0x", pre, 0, 1);
+    str = ft_strjoin_free(pre, str, 1, 1);
     return (str);
 }
 
@@ -73,29 +72,36 @@ void conv_p(t_pf *pf, va_list ap)
 {
     void *n;
     char *str;
+    char *del;
 
     n = va_arg(ap, void *);
 
-    str = ft_itoa_base((unsigned long long)n, 16, 0);
+    //str = ft_itoa_base((unsigned long long)n, 16, 0);
+    str = ft_unsigned_ltoa_base((unsigned long long)n, 16, 'a');
     if (pf->flags[prec] >= (int) (ft_strlen(str)) || (pf->flags[prec] > (int) (ft_strlen(str) - 1) && ft_strchr(str, '-') != NULL))
         str = pprec(pf, str, n);
     else if (pf->flags[prec] == 0 && str[0] == '0' && str[1] == '\0')
+    {
+        del = str;
         str = ft_strdup("\0");
+        free(del);
+    }
     if (ft_strchr(str, 'x') == NULL)
     {
         if (pf->flags[width] == 0 && pf->flags[prec] != -1)
-            str = ft_strjoin("0x", str);
+            str = ft_strjoin_free("0x", str, 0, 1);
         else if (pf->flags[width] == 0 && pf->flags[prec] != -1)
-            str = ft_strjoin("0x", str);
+            str = ft_strjoin_free("0x", str, 0, 1);
         else if (pf->flags[width] == 0 && pf->flags[prec] == -1)
-            str = ft_strjoin("0x", str);
+            str = ft_strjoin_free("0x", str, 0, 1);
         else if (pf->flags[width] != 0 && pf->flags[prec] == -1)
-            str = ft_strjoin("0x", str);
+            str = ft_strjoin_free("0x", str, 0, 1);
         else if (pf->flags[width] != 0 && pf->flags[prec] != -1)
-            str = ft_strjoin("0x", str);
+            str = ft_strjoin_free("0x", str, 0, 1);
     }
     if (pf->flags[width] != 0 && (pf->flags[width] > (int)ft_strlen(str)))
         str = pwidth(pf, str);
     pf->size += ft_strlen(str);
     ft_putstr(str);
+    free(str);
 }

@@ -14,8 +14,6 @@
 
 char *iplus(char *str)
 {
-	//char *fresh;
-
 	str = ft_strjoin_free("+", str, 0, 1);
 	return (str);
 }
@@ -67,7 +65,7 @@ void diprint(t_pf *pf, char *str, intmax_t n)
 	if (pf->flags[plus] == 1 && n == 0)
 		str = iplus(str);
 	if (pf->flags[space] == 1 && n >= 0)
-		str = ft_strjoin_free(" ", str, 0, 0);
+		str = ft_strjoin_free(" ", str, 0, 1);
 	if (pf->flags[width] != 0 && (pf->flags[width] > (int)ft_strlen(str)))
 		str = iwidth(pf, str, n);
 	pf->size += ft_strlen(str);
