@@ -5,6 +5,10 @@ CMakeFiles/printf.dir/char_str.c.o
  /Users/nwispmot/Desktop/ft_printf/char_str.c
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
+CMakeFiles/printf.dir/check.c.o
+ /Users/nwispmot/Desktop/ft_printf/check.c
+ /Users/nwispmot/Desktop/ft_printf/ft_printf.h
+ /Users/nwispmot/Desktop/ft_printf/libft/libft.h
 CMakeFiles/printf.dir/float.c.o
  /Users/nwispmot/Desktop/ft_printf/float.c
  /Users/nwispmot/Desktop/ft_printf/ft_printf.h
@@ -160,6 +164,9 @@ CMakeFiles/printf.dir/libft/ft_strdel.c.o
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
 CMakeFiles/printf.dir/libft/ft_strdup.c.o
  /Users/nwispmot/Desktop/ft_printf/libft/ft_strdup.c
+ /Users/nwispmot/Desktop/ft_printf/libft/libft.h
+CMakeFiles/printf.dir/libft/ft_strdup_free.c.o
+ /Users/nwispmot/Desktop/ft_printf/libft/ft_strdup_free.c
  /Users/nwispmot/Desktop/ft_printf/libft/libft.h
 CMakeFiles/printf.dir/libft/ft_strequ.c.o
  /Users/nwispmot/Desktop/ft_printf/libft/ft_strequ.c

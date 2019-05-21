@@ -5,6 +5,10 @@ CMakeFiles/printf.dir/char_str.c.o: ../char_str.c
 CMakeFiles/printf.dir/char_str.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/char_str.c.o: ../libft/libft.h
 
+CMakeFiles/printf.dir/check.c.o: ../check.c
+CMakeFiles/printf.dir/check.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/check.c.o: ../libft/libft.h
+
 CMakeFiles/printf.dir/float.c.o: ../float.c
 CMakeFiles/printf.dir/float.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/float.c.o: ../libft/libft.h
@@ -160,6 +164,9 @@ CMakeFiles/printf.dir/libft/ft_strdel.c.o: ../libft/libft.h
 
 CMakeFiles/printf.dir/libft/ft_strdup.c.o: ../libft/ft_strdup.c
 CMakeFiles/printf.dir/libft/ft_strdup.c.o: ../libft/libft.h
+
+CMakeFiles/printf.dir/libft/ft_strdup_free.c.o: ../libft/ft_strdup_free.c
+CMakeFiles/printf.dir/libft/ft_strdup_free.c.o: ../libft/libft.h
 
 CMakeFiles/printf.dir/libft/ft_strequ.c.o: ../libft/ft_strequ.c
 CMakeFiles/printf.dir/libft/ft_strequ.c.o: ../libft/libft.h

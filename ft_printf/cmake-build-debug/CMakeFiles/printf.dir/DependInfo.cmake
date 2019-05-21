@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/nwispmot/Desktop/ft_printf/char_str.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/char_str.c.o"
+  "/Users/nwispmot/Desktop/ft_printf/check.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/check.c.o"
   "/Users/nwispmot/Desktop/ft_printf/float.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/float.c.o"
   "/Users/nwispmot/Desktop/ft_printf/ft_printf.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/ft_printf.c.o"
   "/Users/nwispmot/Desktop/ft_printf/int_dec.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/int_dec.c.o"
@@ -56,6 +57,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/nwispmot/Desktop/ft_printf/libft/ft_strcpy.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_strcpy.c.o"
   "/Users/nwispmot/Desktop/ft_printf/libft/ft_strdel.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_strdel.c.o"
   "/Users/nwispmot/Desktop/ft_printf/libft/ft_strdup.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_strdup.c.o"
+  "/Users/nwispmot/Desktop/ft_printf/libft/ft_strdup_free.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_strdup_free.c.o"
   "/Users/nwispmot/Desktop/ft_printf/libft/ft_strequ.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_strequ.c.o"
   "/Users/nwispmot/Desktop/ft_printf/libft/ft_striter.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_striter.c.o"
   "/Users/nwispmot/Desktop/ft_printf/libft/ft_striteri.c" "/Users/nwispmot/Desktop/ft_printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_striteri.c.o"

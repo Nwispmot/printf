@@ -103,5 +103,6 @@ double				ft_pow(double x, double y);
 char				*ft_strjoin_free(char *s1, char *s2, int free1, int free2);
 char				*ft_ltoa(long long n);
 char				*ft_unsigned_ltoa_base(unsigned long long value, int base, char c);
+char				*ft_strdup_free(const char *s1, char *str);
 
 #endif

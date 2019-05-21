@@ -84,6 +84,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/libft/ft_strjoin_free.c.o"
   "CMakeFiles/printf.dir/libft/ft_ltoa.c.o"
   "CMakeFiles/printf.dir/libft/ft_ltoa_base.c.o"
+  "CMakeFiles/printf.dir/check.c.o"
+  "CMakeFiles/printf.dir/libft/ft_strdup_free.c.o"
   "printf.pdb"
   "printf"
 )

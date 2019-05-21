@@ -150,6 +150,33 @@ char_str.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/char_str.c.s
 .PHONY : char_str.c.s
 
+check.o: check.c.o
+
+.PHONY : check.o
+
+# target to build an object file
+check.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/check.c.o
+.PHONY : check.c.o
+
+check.i: check.c.i
+
+.PHONY : check.i
+
+# target to preprocess a source file
+check.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/check.c.i
+.PHONY : check.c.i
+
+check.s: check.c.s
+
+.PHONY : check.s
+
+# target to generate assembly for a file
+check.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/check.c.s
+.PHONY : check.c.s
+
 float.o: float.c.o
 
 .PHONY : float.o
@@ -1527,6 +1554,33 @@ libft/ft_strdup.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_strdup.c.s
 .PHONY : libft/ft_strdup.c.s
 
+libft/ft_strdup_free.o: libft/ft_strdup_free.c.o
+
+.PHONY : libft/ft_strdup_free.o
+
+# target to build an object file
+libft/ft_strdup_free.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_strdup_free.c.o
+.PHONY : libft/ft_strdup_free.c.o
+
+libft/ft_strdup_free.i: libft/ft_strdup_free.c.i
+
+.PHONY : libft/ft_strdup_free.i
+
+# target to preprocess a source file
+libft/ft_strdup_free.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_strdup_free.c.i
+.PHONY : libft/ft_strdup_free.c.i
+
+libft/ft_strdup_free.s: libft/ft_strdup_free.c.s
+
+.PHONY : libft/ft_strdup_free.s
+
+# target to generate assembly for a file
+libft/ft_strdup_free.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_strdup_free.c.s
+.PHONY : libft/ft_strdup_free.c.s
+
 libft/ft_strequ.o: libft/ft_strequ.c.o
 
 .PHONY : libft/ft_strequ.o
@@ -2430,6 +2484,9 @@ help:
 	@echo "... char_str.o"
 	@echo "... char_str.i"
 	@echo "... char_str.s"
+	@echo "... check.o"
+	@echo "... check.i"
+	@echo "... check.s"
 	@echo "... float.o"
 	@echo "... float.i"
 	@echo "... float.s"
@@ -2583,6 +2640,9 @@ help:
 	@echo "... libft/ft_strdup.o"
 	@echo "... libft/ft_strdup.i"
 	@echo "... libft/ft_strdup.s"
+	@echo "... libft/ft_strdup_free.o"
+	@echo "... libft/ft_strdup_free.i"
+	@echo "... libft/ft_strdup_free.s"
 	@echo "... libft/ft_strequ.o"
 	@echo "... libft/ft_strequ.i"
 	@echo "... libft/ft_strequ.s"

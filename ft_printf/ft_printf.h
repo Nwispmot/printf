@@ -48,5 +48,7 @@ void    conv_p(t_pf *pf, va_list ap);
 void    conv_f(t_pf *pf, va_list ap);
 char	*fwidth(t_pf *pf, char *str, intmax_t n);
 void    conv_percent(t_pf *pf, va_list ap);
-
+char	*uwidth(t_pf *pf, char *str, intmax_t n);
+void	ucheck(t_pf *pf, char **str, char **pre, intmax_t n);
+void	check(t_pf *pf, char **str, char **pre, intmax_t n);
 #endif
